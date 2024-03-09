@@ -1,0 +1,11 @@
+{
+  "common": {
+    "english": "English",
+    "turkish": "Turkish",
+    "german": "German",
+    "welcome": "Welcome to my React Native project",
+    "langChangeButtonTextTr": "Change the application language to Turkish",
+    "langChangeButtonTextEn": "Change the application language to English",
+    "langChangeButtonTextDe": "Change the application language to German"
+  }
+}

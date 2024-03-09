@@ -1,0 +1,11 @@
+{
+  "common": {
+    "english": "İngilizce",
+    "turkish": "Türkçe",
+    "german": "Almanca",
+    "welcome": "React Native projeme hoş geldin",
+    "langChangeButtonTextTr": "Uygulama dilini Türkçe yap",
+    "langChangeButtonTextEn": "Uygulama dilini İngilizce yap",
+    "langChangeButtonTextDe": "Uygulama dilini Almanca yap"
+  }
+}

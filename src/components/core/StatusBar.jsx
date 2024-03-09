@@ -1,0 +1,22 @@
+import React from 'react';
+import {useTheme} from '@emotion/react';
+import {StatusBar} from 'react-native';
+import ThemeUseContext from '../../hooks/ThemeUseContext';
+import {THEMES} from '../../utils/constant/themeConstant';
+
+const StatusBarComp = () => {
+  const {theme} = ThemeUseContext();
+  const themeHook = useTheme();
+
+  return (
+    <StatusBar
+      animated={true}
+      backgroundColor={themeHook.palette.app.statusBar.background}
+      barStyle={theme === THEMES.DEFAULT.key ? 'light-content' : 'dark-content'}
+      showHideTransition="fade"
+      hidden={false}
+    />
+  );
+};
+
+export default StatusBarComp;
