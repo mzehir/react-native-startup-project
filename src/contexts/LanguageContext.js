@@ -15,7 +15,6 @@ const LanguageContext = createContext(initialState);
 
 function LanguageProvider({children}) {
   const {t} = useTranslation();
-
   const [language, _setLanguage] = useState('');
 
   const setLanguage = language => {
