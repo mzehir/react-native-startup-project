@@ -23,6 +23,17 @@ const defaultVariant = {
         color: '#777777',
         activeColor: '#333333',
       },
+      customComponents: {
+        elementDropdown: {
+          inputBackground: '#FFFFFF',
+          menuBackground: '#FFFFFF',
+          activeItemBackground: '#EFF4FB',
+          inputBorderColor: '#C4C4C4',
+          inputBorderColorFocus: '#376FD0',
+          placeholderColor: '#A4A4A4',
+          textColor: '#212121',
+        },
+      },
     },
     error: {
       color: '#d32f2f',
@@ -84,6 +95,17 @@ const darkVariant = merge(defaultVariant, {
       icon: {
         color: '#878D96',
         activeColor: '#EEEEEE',
+      },
+      customComponents: {
+        elementDropdown: {
+          inputBackground: '#233044',
+          menuBackground: '#233044',
+          activeItemBackground: '#2A4267',
+          inputBorderColor: '#56606F',
+          inputBorderColorFocus: '#407AD6',
+          placeholderColor: '#56606F',
+          textColor: '#FFFFFF',
+        },
       },
     },
     error: {
