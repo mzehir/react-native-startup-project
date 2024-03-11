@@ -8,22 +8,15 @@ const defaultVariant = {
       color: '#000',
       background: '#F7F9FC',
       borderColor: '',
-      statusBar: {
-        background: '#233044',
-      },
-      appBar: {
-        background: '#FFFFFF',
-        textColor: '',
-      },
-      bottomTab: {
-        background: '#FFFFFF',
-        textColor: '',
-      },
-      icon: {
-        color: '#777777',
-        activeColor: '#333333',
-      },
-      customComponents: {
+      // icon: {
+      //   color: '#777777',
+      //   activeColor: '#333333',
+      // },
+      components: {
+        icon: {
+          color: '#777777',
+          activeColor: '#333333',
+        },
         elementDropdown: {
           inputBackground: '#FFFFFF',
           menuBackground: '#FFFFFF',
@@ -72,6 +65,17 @@ const defaultVariant = {
       containedColor: '#fff',
     },
   },
+  statusBar: {
+    background: '#233044',
+  },
+  appBar: {
+    background: '#FFFFFF',
+    textColor: '',
+  },
+  bottomTab: {
+    background: '#FFFFFF',
+    textColor: '',
+  },
 };
 
 const darkVariant = merge(defaultVariant, {
@@ -81,22 +85,11 @@ const darkVariant = merge(defaultVariant, {
       color: '#FFF',
       background: '#1B2635',
       borderColor: '',
-      statusBar: {
-        background: '#233044',
-      },
-      appBar: {
-        background: '#233044',
-        textColor: '',
-      },
-      bottomTab: {
-        background: '#233044',
-        textColor: '',
-      },
-      icon: {
-        color: '#878D96',
-        activeColor: '#EEEEEE',
-      },
-      customComponents: {
+      // icon: {
+      //   color: '#878D96',
+      //   activeColor: '#EEEEEE',
+      // },
+      components: {
         elementDropdown: {
           inputBackground: '#233044',
           menuBackground: '#233044',
@@ -105,6 +98,10 @@ const darkVariant = merge(defaultVariant, {
           inputBorderColorFocus: '#407AD6',
           placeholderColor: '#56606F',
           textColor: '#FFFFFF',
+        },
+        icon: {
+          color: '#878D96',
+          activeColor: '#EEEEEE',
         },
       },
     },
@@ -144,6 +141,17 @@ const darkVariant = merge(defaultVariant, {
       background: '#ffa726',
       containedColor: 'rgba(0, 0, 0, 0.87)',
     },
+  },
+  statusBar: {
+    background: '#233044',
+  },
+  appBar: {
+    background: '#233044',
+    textColor: '',
+  },
+  bottomTab: {
+    background: '#233044',
+    textColor: '',
   },
 });
 

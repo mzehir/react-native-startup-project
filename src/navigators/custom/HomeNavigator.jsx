@@ -11,10 +11,10 @@ const HomeNavigator = () => {
   const screenOptions = {
     tabBarShowLabel: false,
     headerStyle: {
-      backgroundColor: themeHook.palette.app.appBar.background,
+      backgroundColor: themeHook.appBar.background,
     },
     tabBarStyle: {
-      backgroundColor: themeHook.palette.app.bottomTab.background,
+      backgroundColor: themeHook.bottomTab.background,
     },
   };
 

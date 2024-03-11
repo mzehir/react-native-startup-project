@@ -12,7 +12,7 @@ const AuthNavigator = () => {
 
   let screenOptions = {
     headerStyle: {
-      backgroundColor: themeHook.palette.app.appBar.background,
+      backgroundColor: themeHook.appBar.background,
     },
     headerBackVisible: false,
     headerLeft: (navigation, navigationHook) => {

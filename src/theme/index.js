@@ -46,6 +46,9 @@ const createTheme = name => {
     },
     {
       name: themeConfig.name,
+      statusBar: themeConfig.statusBar,
+      appBar: themeConfig.appBar,
+      bottomTab: themeConfig.bottomTab
     },
   );
 

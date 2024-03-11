@@ -9,8 +9,8 @@ const StyledMaterialIconsDefaultComp = styled(MaterialIcons)`
     props.colorGroup
       ? props.theme.palette[props.colorGroup][props.color]
       : props.active
-      ? props.theme.palette.app.icon.activeColor
-      : props.theme.palette.app.icon.color};
+      ? props.theme.palette.app.components.icon.activeColor
+      : props.theme.palette.app.components.icon.color};
 `;
 
 export const MaterialIconsDefaultComp = ({
@@ -40,8 +40,8 @@ const StyledMaterialCommunityIconsDefaultComp = styled(MaterialCommunityIcons)`
     props.colorGroup
       ? props.theme.palette[props.colorGroup][props.color]
       : props.active
-      ? props.theme.palette.app.icon.activeColor
-      : props.theme.palette.app.icon.color};
+      ? props.theme.palette.app.components.icon.activeColor
+      : props.theme.palette.app.components.icon.color};
 `;
 
 export const MaterialCommunityIconsDefaultComp = ({

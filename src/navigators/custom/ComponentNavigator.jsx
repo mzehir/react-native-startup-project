@@ -12,7 +12,7 @@ const ComponentNavigator = () => {
 
   let screenOptions = {
     headerStyle: {
-      backgroundColor: themeHook.palette.app.appBar.background,
+      backgroundColor: themeHook.appBar.background,
     },
     headerLeft: (navigation, navigationHook) => {
       return navigation.canGoBack ? (

@@ -23,12 +23,12 @@ const ReactNativeElementDropdown = ({
     paddingHorizontal: 8,
 
     backgroundColor:
-      themeHook.palette.app.customComponents.elementDropdown.inputBackground,
+      themeHook.palette.app.components.elementDropdown.inputBackground,
 
     borderColor: isFocus
-      ? themeHook.palette.app.customComponents.elementDropdown
+      ? themeHook.palette.app.components.elementDropdown
           .inputBorderColorFocus
-      : themeHook.palette.app.customComponents.elementDropdown.inputBorderColor,
+      : themeHook.palette.app.components.elementDropdown.inputBorderColor,
 
     borderWidth: 1,
     borderRadius: 8,
@@ -38,18 +38,18 @@ const ReactNativeElementDropdown = ({
     fontSize: 16,
 
     color:
-      themeHook.palette.app.customComponents.elementDropdown.placeholderColor,
+      themeHook.palette.app.components.elementDropdown.placeholderColor,
   };
 
   const selectedTextStyle = {
     fontSize: 16,
-    color: themeHook.palette.app.customComponents.elementDropdown.textColor,
+    color: themeHook.palette.app.components.elementDropdown.textColor,
   };
 
   const containerStyle = {
     borderWidth: 0,
     backgroundColor:
-      themeHook.palette.app.customComponents.elementDropdown.menuBackground,
+      themeHook.palette.app.components.elementDropdown.menuBackground,
   };
 
   const inputSearchStyle = {
@@ -59,18 +59,18 @@ const ReactNativeElementDropdown = ({
     borderBottomWidth: 1,
 
     borderColor:
-      themeHook.palette.app.customComponents.elementDropdown.inputBorderColor,
+      themeHook.palette.app.components.elementDropdown.inputBorderColor,
 
     color:
-      themeHook.palette.app.customComponents.elementDropdown.placeholderColor,
+      themeHook.palette.app.components.elementDropdown.placeholderColor,
   };
 
   const itemTextStyle = {
-    color: themeHook.palette.app.customComponents.elementDropdown.textColor,
+    color: themeHook.palette.app.components.elementDropdown.textColor,
   };
 
   const activeColor =
-    themeHook.palette.app.customComponents.elementDropdown.activeItemBackground;
+    themeHook.palette.app.components.elementDropdown.activeItemBackground;
 
   const iconStyle = {
     marginRight: 5,
