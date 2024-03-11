@@ -35,6 +35,10 @@ const StackNavigator = ({initialRouteName, screens, screenOptions = {}}) => {
             ...(item.options?.headerTitle
               ? {headerTitle: props => item.options.headerTitle(props)}
               : {}),
+
+            ...(item.options?.headerLeft
+              ? {headerLeft: props => item.options.headerLeft(props)}
+              : {}),
           }}>
           {props => item.component(props)}
         </Stack.Screen>

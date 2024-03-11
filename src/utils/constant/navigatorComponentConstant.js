@@ -21,7 +21,11 @@ export const COMPONENT_NAVIGATORS = {
           {props.children}
         </ThemeTextComp>
       ),
+      headerLeft: () => {
+        return null;
+      },
     },
+    initialRouteName: true,
   },
 
   BUTTON: {
