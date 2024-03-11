@@ -8,10 +8,6 @@ const defaultVariant = {
       color: '#000',
       background: '#F7F9FC',
       borderColor: '',
-      // icon: {
-      //   color: '#777777',
-      //   activeColor: '#333333',
-      // },
       components: {
         icon: {
           color: '#777777',
@@ -85,10 +81,6 @@ const darkVariant = merge(defaultVariant, {
       color: '#FFF',
       background: '#1B2635',
       borderColor: '',
-      // icon: {
-      //   color: '#878D96',
-      //   activeColor: '#EEEEEE',
-      // },
       components: {
         elementDropdown: {
           inputBackground: '#233044',
