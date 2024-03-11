@@ -22,6 +22,9 @@ const defaultVariant = {
           placeholderColor: '#A4A4A4',
           textColor: '#212121',
         },
+        paper: {
+          background: '#FFFFFF',
+        },
       },
     },
     error: {
@@ -82,6 +85,10 @@ const darkVariant = merge(defaultVariant, {
       background: '#1B2635',
       borderColor: '',
       components: {
+        icon: {
+          color: '#878D96',
+          activeColor: '#EEEEEE',
+        },
         elementDropdown: {
           inputBackground: '#233044',
           menuBackground: '#233044',
@@ -91,9 +98,8 @@ const darkVariant = merge(defaultVariant, {
           placeholderColor: '#56606F',
           textColor: '#FFFFFF',
         },
-        icon: {
-          color: '#878D96',
-          activeColor: '#EEEEEE',
+        paper: {
+          background: '#233044',
         },
       },
     },

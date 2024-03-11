@@ -3,8 +3,9 @@ import styled from '@emotion/native';
 import ViewComp from '../core/View';
 
 const Container = styled(ViewComp)`
+  background-color: ${props =>
+    props.theme.palette.app.components.paper.background};
   border-radius: 6px;
-  background-color: rgb(35, 48, 68);
   shadow-color: #32325d;
   shadow-offset: 0px 2px;
   shadow-opacity: 0.024;
