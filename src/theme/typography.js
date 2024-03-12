@@ -68,6 +68,21 @@ const typography = {
       fontWeight: 'bold',
     },
   },
+
+  forSelect: {
+    small: {
+      fontSize: 12,
+      fontWeight: 'normal',
+    },
+    medium: {
+      fontSize: 16,
+      fontWeight: 'normal',
+    },
+    large: {
+      fontSize: 20,
+      fontWeight: 'normal',
+    },
+  },
 };
 
 export default typography;
