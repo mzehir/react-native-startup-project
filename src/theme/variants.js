@@ -5,9 +5,6 @@ const defaultVariant = {
   name: THEMES.DEFAULT.key,
   palette: {
     app: {
-      color: '#000',
-      background: '#F7F9FC',
-      borderColor: '',
       components: {
         icon: {
           color: '#777777',
@@ -87,9 +84,6 @@ const darkVariant = merge(defaultVariant, {
   name: THEMES.DARK.key,
   palette: {
     app: {
-      color: '#FFF',
-      background: '#1B2635',
-      borderColor: '',
       components: {
         icon: {
           color: '#878D96',
