@@ -20,7 +20,7 @@ const ItemContainer = styled(ViewComp)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-vertical: 5px;
+  padding-vertical: 15px;
   padding-horizontal: 15px;
   height: 200px;
   width: 170px;

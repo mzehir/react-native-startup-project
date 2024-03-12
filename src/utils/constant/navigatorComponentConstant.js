@@ -1,7 +1,7 @@
 import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
-import ButtonView from '../../view/component/button/Button';
+import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 import ThemeTextComp from '../../components/custom/ThemeText';
 
 export const COMPONENT_NAVIGATORS = {
@@ -33,7 +33,7 @@ export const COMPONENT_NAVIGATORS = {
     component: props => (
       <ScrollViewDefault>
         <DefaultLayout>
-          <ButtonView {...props} />
+          <ButtonPlayground {...props} />
         </DefaultLayout>
       </ScrollViewDefault>
     ),

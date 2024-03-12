@@ -5,6 +5,14 @@ import ViewComp from '../core/View';
 const Container = styled(ViewComp)`
   background-color: ${props =>
     props.theme.palette.app.components.paper.background};
+
+  ${props =>
+    props.paddingHorizontal &&
+    `padding-horizontal: ${props.paddingHorizontal}px;`}
+
+  ${props =>
+    props.paddingVertical && `padding-vertical: ${props.paddingVertical}px;`}
+
   border-radius: 6px;
   shadow-color: #32325d;
   shadow-offset: 0px 2px;
@@ -19,7 +27,13 @@ const Container = styled(ViewComp)`
 const PaperComp = props => {
   const {children} = props;
 
-  return <Container>{children}</Container>;
+  return (
+    <Container
+      paddingHorizontal={props.paddingHorizontal}
+      paddingVertical={props.paddingVertical}>
+      {children}
+    </Container>
+  );
 };
 
 export default PaperComp;

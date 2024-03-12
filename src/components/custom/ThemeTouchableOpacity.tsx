@@ -21,19 +21,19 @@ interface StyledTouchableOpacityProps {
   color: 'error' | 'info' | 'primary' | 'secondary' | 'success' | 'warning';
   variant: 'text' | 'outlined' | 'contained';
   radius:
-    | 'little'
-    | 'few'
-    | 'normal'
-    | 'more'
-    | 'much'
-    | 'plenty'
-    | 'many'
-    | 'none';
-  iconFields?: IconFields | {position: 'right'};
+  | 'little'
+  | 'few'
+  | 'normal'
+  | 'more'
+  | 'much'
+  | 'plenty'
+  | 'many'
+  | 'none';
+  iconFields?: IconFields | { position: 'right' };
   children: React.ReactNode;
 }
 
-const StyledText = styled(TextComp)<StyledTouchableOpacityProps>`
+const StyledText = styled(TextComp) <StyledTouchableOpacityProps>`
   font-size: ${props =>
     props.theme.typography.forButton[props.size].fontSize + `px`};
   font-weight: ${props =>
@@ -46,11 +46,11 @@ const StyledText = styled(TextComp)<StyledTouchableOpacityProps>`
 
 const StyledTouchableOpacityComp = styled(
   TouchableOpacityComp,
-)<StyledTouchableOpacityProps>`
+) <StyledTouchableOpacityProps>`
   flex-direction: ${props =>
     props.iconFields?.position === 'right' ? 'row' : 'row-reverse'};
 
-  justify-content: ${props => (props.iconFields ? 'space-between' : 'center')};
+  justify-content: center;
 
   align-items: center;
 
@@ -110,7 +110,7 @@ const ThemeTouchableOpacityComp: React.FC<StyledTouchableOpacityProps> = ({
   color = 'success',
   variant = 'contained',
   radius = 'few',
-  iconFields = {position: 'right'},
+  iconFields = { position: 'right' },
   children,
   ...props
 }) => {
