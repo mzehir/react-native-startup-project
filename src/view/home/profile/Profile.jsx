@@ -4,8 +4,8 @@ import ViewComp from '../../../components/core/View';
 import TouchableOpacityComp from '../../../components/core/TouchableOpacity';
 import BottomModalComp from '../../../components/custom/BottomModal';
 import SettingsSection from '../../../components/custom/settings/Settings';
-import ThemeTextComp from '../../../components/custom/ThemeText';
 import {MaterialCommunityIconsDefaultComp} from '../../../components/custom/Icons';
+import CustomTextComp from '../../../components/custom/CustomText';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -30,7 +30,7 @@ const ProfileView = ({navigation}) => {
 
   return (
     <Container>
-      <ThemeTextComp>Profile View</ThemeTextComp>
+      <CustomTextComp>Profile View</CustomTextComp>
 
       <BottomModalComp
         visible={modalVisible}

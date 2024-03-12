@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/native';
 import ViewComp from '../../../components/core/View';
-import ThemeTextComp from '../../../components/custom/ThemeText';
+import CustomTextComp from '../../../components/custom/CustomText';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -12,7 +12,7 @@ const Container = styled(ViewComp)`
 const HomeView = () => {
   return (
     <Container>
-      <ThemeTextComp>Home View</ThemeTextComp>
+      <CustomTextComp>Home View</CustomTextComp>
     </Container>
   );
 };

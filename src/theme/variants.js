@@ -27,6 +27,12 @@ const defaultVariant = {
         },
       },
     },
+    standard: {
+      color: '#000',
+      borderColor: '#D9DBDD',
+      background: '#F7F9FC',
+      containedColor: 'transparent',
+    },
     error: {
       color: '#d32f2f',
       borderColor: 'rgba(211, 47, 47, 0.5)',
@@ -102,6 +108,12 @@ const darkVariant = merge(defaultVariant, {
           background: '#233044',
         },
       },
+    },
+    standard: {
+      color: '#FFF',
+      borderColor: '#37404E',
+      background: '#1B2635',
+      containedColor: 'transparent',
     },
     error: {
       color: '#f44336',

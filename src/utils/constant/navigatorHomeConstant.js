@@ -4,7 +4,7 @@ import HomeView from '../../view/home/home/Home';
 import ComponentNavigator from '../../navigators/custom/ComponentNavigator';
 import ProfileView from '../../view/home/profile/Profile';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
-import ThemeTextComp from '../../components/custom/ThemeText';
+import CustomTextComp from '../../components/custom/CustomText';
 
 export const HOME_NAVIGATORS = {
   HOME: {
@@ -19,9 +19,9 @@ export const HOME_NAVIGATORS = {
     options: {
       title: 'Home',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
       tabBarIcon: ({size, focused}) => (
         <MaterialIconsDefaultComp name="home" size={size} active={focused} />
@@ -53,9 +53,9 @@ export const HOME_NAVIGATORS = {
     options: {
       title: 'Profile',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
       tabBarIcon: ({size, focused}) => (
         <MaterialIconsDefaultComp name="person" size={size} active={focused} />

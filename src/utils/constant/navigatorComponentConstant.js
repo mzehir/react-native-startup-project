@@ -2,7 +2,7 @@ import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
-import ThemeTextComp from '../../components/custom/ThemeText';
+import CustomTextComp from '../../components/custom/CustomText';
 
 export const COMPONENT_NAVIGATORS = {
   COMPONENTS: {
@@ -17,9 +17,9 @@ export const COMPONENT_NAVIGATORS = {
     options: {
       title: 'Components',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
       headerLeft: () => {
         return null;
@@ -40,9 +40,9 @@ export const COMPONENT_NAVIGATORS = {
     options: {
       title: 'Button',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
     },
   },

@@ -4,7 +4,7 @@ import LoginView from '../../view/auth/login/Login';
 import RegisterView from '../../view/auth/register/Register';
 import ForgotPasswordView from '../../view/auth/forgotPassword/ForgotPassword';
 import HomeNavigator from '../../navigators/custom/HomeNavigator';
-import ThemeTextComp from '../../components/custom/ThemeText';
+import CustomTextComp from '../../components/custom/CustomText';
 
 export const AUTH_NAVIGATORS = {
   REGISTER: {
@@ -19,9 +19,9 @@ export const AUTH_NAVIGATORS = {
     options: {
       title: 'Register',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
     },
   },
@@ -38,9 +38,9 @@ export const AUTH_NAVIGATORS = {
     options: {
       title: 'Login',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
     },
   },
@@ -57,9 +57,9 @@ export const AUTH_NAVIGATORS = {
     options: {
       title: 'Forgot Password',
       headerTitle: props => (
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {props.children}
-        </ThemeTextComp>
+        </CustomTextComp>
       ),
     },
   },

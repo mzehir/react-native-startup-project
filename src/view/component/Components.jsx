@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/native';
 import ViewComp from '../../components/core/View';
-import ThemeTextComp from '../../components/custom/ThemeText';
 import PaperComp from '../../components/custom/Paper';
 import ThemeTouchableOpacityComp from '../../components/custom/ThemeTouchableOpacity';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import {COMPONENT_NAVIGATORS} from '../../utils/constant/navigatorComponentConstant';
+import CustomTextComp from '../../components/custom/CustomText';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -67,13 +67,13 @@ const Item = ({navigation, title, content, name}) => {
   return (
     <ItemContainer>
       <ItemContent>
-        <ThemeTextComp variant="title" size="medium">
+        <CustomTextComp variant="title" size="medium">
           {title}
-        </ThemeTextComp>
+        </CustomTextComp>
 
-        <ThemeTextComp variant="label" size="small">
+        <CustomTextComp variant="label" size="small">
           {content}
-        </ThemeTextComp>
+        </CustomTextComp>
       </ItemContent>
 
       <ItemButtonContainer>

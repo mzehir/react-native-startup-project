@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/native';
 import {useNavigation} from '@react-navigation/native';
 import ViewComp from '../../../components/core/View';
-import ThemeTextComp from '../../../components/custom/ThemeText';
 import ThemeTouchableOpacityComp from '../../../components/custom/ThemeTouchableOpacity';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 import {AUTH_NAVIGATORS} from '../../../utils/constant/navigatorAuthConstant';
+import CustomTextComp from '../../../components/custom/CustomText';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -22,7 +22,7 @@ const RegisterView = () => {
 
   return (
     <Container>
-      <ThemeTextComp>Register View</ThemeTextComp>
+      <CustomTextComp>Register View</CustomTextComp>
 
       <Spacer />
 
