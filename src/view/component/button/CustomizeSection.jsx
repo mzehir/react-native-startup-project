@@ -1,38 +1,43 @@
 import React from 'react';
 import PaperComp from '../../../components/custom/Paper';
-import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
 import ViewComp from '../../../components/core/View';
+import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
 
 const sizeOptions = [
-  {label: 'small', value: 'small'},
-  {label: 'medium', value: 'medium'},
-  {label: 'large', value: 'large'},
+  {label: 'Small', value: 'small'},
+  {label: 'Medium', value: 'medium'},
+  {label: 'Large', value: 'large'},
 ];
 
 const colorOptions = [
-  {label: 'error', value: 'error'},
-  {label: 'info', value: 'info'},
-  {label: 'primary', value: 'primary'},
-  {label: 'secondary', value: 'secondary'},
-  {label: 'success', value: 'success'},
-  {label: 'warning', value: 'warning'},
+  {label: 'Error', value: 'error'},
+  {label: 'Info', value: 'info'},
+  {label: 'Primary', value: 'primary'},
+  {label: 'Secondary', value: 'secondary'},
+  {label: 'Success', value: 'success'},
+  {label: 'Warning', value: 'warning'},
 ];
 
 const variantOptions = [
-  {label: 'text', value: 'text'},
-  {label: 'outlined', value: 'outlined'},
-  {label: 'contained', value: 'contained'},
+  {label: 'Text', value: 'text'},
+  {label: 'Outlined', value: 'outlined'},
+  {label: 'Contained', value: 'contained'},
 ];
 
 const radiusOptions = [
-  {label: 'little', value: 'little'},
-  {label: 'few', value: 'few'},
-  {label: 'normal', value: 'normal'},
-  {label: 'more', value: 'more'},
-  {label: 'much', value: 'much'},
-  {label: 'plenty', value: 'plenty'},
-  {label: 'many', value: 'many'},
-  {label: 'none', value: 'none'},
+  {label: 'Little', value: 'little'},
+  {label: 'Few', value: 'few'},
+  {label: 'Normal', value: 'normal'},
+  {label: 'More', value: 'more'},
+  {label: 'Much', value: 'much'},
+  {label: 'Plenty', value: 'plenty'},
+  {label: 'Many', value: 'many'},
+  {label: 'None', value: 'none'},
+];
+
+const iconPositionOptions = [
+  {label: 'Left', value: 'left'},
+  {label: 'Right', value: 'right'},
 ];
 
 const CustomizeSection = ({
@@ -45,6 +50,10 @@ const CustomizeSection = ({
   setSelectedVariant,
   selectedRadius,
   setSelectedRadius,
+  selectedIconPosition,
+  setSelectedIconPosition,
+  iconVisible,
+  setIconVisible,
 }) => {
   return (
     <PaperComp {...sectionPaperPadding}>
@@ -89,6 +98,17 @@ const CustomizeSection = ({
           setValue={item => {
             if (typeof item === 'object') {
               setSelectedRadius(item.value);
+            }
+          }}
+        />
+
+        <ReactNativeElementDropdown
+          search={false}
+          data={iconPositionOptions}
+          value={selectedIconPosition}
+          setValue={item => {
+            if (typeof item === 'object') {
+              setSelectedIconPosition(item.value);
             }
           }}
         />

@@ -20,6 +20,8 @@ const ButtonPlayground = () => {
   const [selectedColor, setSelectedColor] = useState('success');
   const [selectedVariant, setSelectedVariant] = useState('contained');
   const [selectedRadius, setSelectedRadius] = useState('few');
+  const [selectedIconPosition, setSelectedIconPosition] = useState("left");
+  const [iconVisible, setIconVisible] = useState(true)
   return (
     <Container>
       <ObserveSection
@@ -28,6 +30,8 @@ const ButtonPlayground = () => {
         selectedColor={selectedColor}
         selectedVariant={selectedVariant}
         selectedRadius={selectedRadius}
+        selectedIconPosition={selectedIconPosition}
+        iconVisible={iconVisible}
       />
 
       <CustomizeSection
@@ -40,6 +44,10 @@ const ButtonPlayground = () => {
         setSelectedVariant={setSelectedVariant}
         selectedRadius={selectedRadius}
         setSelectedRadius={setSelectedRadius}
+        selectedIconPosition={selectedIconPosition}
+        setSelectedIconPosition={setSelectedIconPosition}
+        iconVisible={iconVisible}
+        setIconVisible={setIconVisible}
       />
     </Container>
   );
