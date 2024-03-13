@@ -42,7 +42,7 @@ export const COMPONENT_NAVIGATORS = {
       </ScrollViewDefault>
     ),
     options: {
-      title: 'Button',
+      title: 'Button Playground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
