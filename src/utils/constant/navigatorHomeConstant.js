@@ -5,6 +5,8 @@ import ComponentNavigator from '../../navigators/custom/ComponentNavigator';
 import ProfileView from '../../view/home/profile/Profile';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import CustomTextComp from '../../components/custom/CustomText';
+import {TEXT_VARIANTS} from './app/textVariantConstant';
+import {SIZES} from './app/sizeConstant';
 
 export const HOME_NAVIGATORS = {
   HOME: {
@@ -19,7 +21,9 @@ export const HOME_NAVIGATORS = {
     options: {
       title: 'Home',
       headerTitle: props => (
-        <CustomTextComp variant="title" size="medium">
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
           {props.children}
         </CustomTextComp>
       ),
@@ -36,7 +40,11 @@ export const HOME_NAVIGATORS = {
     options: {
       headerShown: false,
       tabBarIcon: ({size, focused}) => (
-        <MaterialIconsDefaultComp name="grid-view" size={size} active={focused} />
+        <MaterialIconsDefaultComp
+          name="grid-view"
+          size={size}
+          active={focused}
+        />
       ),
     },
   },
@@ -53,7 +61,9 @@ export const HOME_NAVIGATORS = {
     options: {
       title: 'Profile',
       headerTitle: props => (
-        <CustomTextComp variant="title" size="medium">
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
           {props.children}
         </CustomTextComp>
       ),

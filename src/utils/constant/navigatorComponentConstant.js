@@ -3,6 +3,8 @@ import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 import CustomTextComp from '../../components/custom/CustomText';
+import {TEXT_VARIANTS} from './app/textVariantConstant';
+import {SIZES} from './app/sizeConstant';
 
 export const COMPONENT_NAVIGATORS = {
   COMPONENTS: {
@@ -17,7 +19,9 @@ export const COMPONENT_NAVIGATORS = {
     options: {
       title: 'Components',
       headerTitle: props => (
-        <CustomTextComp variant="title" size="medium">
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
           {props.children}
         </CustomTextComp>
       ),
@@ -40,7 +44,9 @@ export const COMPONENT_NAVIGATORS = {
     options: {
       title: 'Button',
       headerTitle: props => (
-        <CustomTextComp variant="title" size="medium">
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
           {props.children}
         </CustomTextComp>
       ),

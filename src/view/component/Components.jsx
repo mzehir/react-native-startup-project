@@ -2,10 +2,14 @@ import React from 'react';
 import styled from '@emotion/native';
 import ViewComp from '../../components/core/View';
 import PaperComp from '../../components/custom/Paper';
-import ThemeTouchableOpacityComp from '../../components/custom/ThemeTouchableOpacity';
+import CustomTouchableOpacityComp from '../../components/custom/CustomTouchableOpacity';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
-import {COMPONENT_NAVIGATORS} from '../../utils/constant/navigatorComponentConstant';
 import CustomTextComp from '../../components/custom/CustomText';
+import {COMPONENT_NAVIGATORS} from '../../utils/constant/navigatorComponentConstant';
+import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
+import {COLORS} from '../../utils/constant/app/colorConstant';
+import {SIZES} from '../../utils/constant/app/sizeConstant';
+import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -67,11 +71,15 @@ const Item = ({navigation, title, content, name}) => {
   return (
     <ItemContainer>
       <ItemContent>
-        <CustomTextComp variant="title" size="medium">
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
           {title}
         </CustomTextComp>
 
-        <CustomTextComp variant="label" size="small">
+        <CustomTextComp
+          variant={TEXT_VARIANTS.LABEL.value}
+          size={SIZES.small.value}>
           {content}
         </CustomTextComp>
       </ItemContent>
@@ -81,10 +89,10 @@ const Item = ({navigation, title, content, name}) => {
           style={{
             width: '50%',
           }}>
-          <ThemeTouchableOpacityComp
-            variant="text"
-            color="info"
-            size="small"
+          <CustomTouchableOpacityComp
+            variant={BUTTON_VARIANTS.TEXT.value}
+            color={COLORS.INFO.value}
+            size={SIZES.small.value}
             iconFields={{
               component: MaterialIconsDefaultComp,
               name: 'arrow-forward',
@@ -92,7 +100,7 @@ const Item = ({navigation, title, content, name}) => {
             }}
             onPress={() => navigation.navigate(name)}>
             Go to Detail
-          </ThemeTouchableOpacityComp>
+          </CustomTouchableOpacityComp>
         </ViewComp>
       </ItemButtonContainer>
     </ItemContainer>

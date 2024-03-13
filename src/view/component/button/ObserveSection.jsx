@@ -1,7 +1,7 @@
 import React from 'react';
 import PaperComp from '../../../components/custom/Paper';
-import ThemeTouchableOpacityComp from '../../../components/custom/ThemeTouchableOpacity';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
+import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
 
 const ObserveSection = ({
   sectionPaperPadding,
@@ -14,7 +14,7 @@ const ObserveSection = ({
 }) => {
   return (
     <PaperComp {...sectionPaperPadding}>
-      <ThemeTouchableOpacityComp
+      <CustomTouchableOpacityComp
         size={selectedSize}
         color={selectedColor}
         variant={selectedVariant}
@@ -29,7 +29,7 @@ const ObserveSection = ({
             }
           : {})}>
         Custom Button
-      </ThemeTouchableOpacityComp>
+      </CustomTouchableOpacityComp>
     </PaperComp>
   );
 };

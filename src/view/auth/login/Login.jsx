@@ -2,10 +2,9 @@ import React from 'react';
 import styled from '@emotion/native';
 import {useNavigation} from '@react-navigation/native';
 import ViewComp from '../../../components/core/View';
-import ThemeTouchableOpacityComp from '../../../components/custom/ThemeTouchableOpacity';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 import {AUTH_NAVIGATORS} from '../../../utils/constant/navigatorAuthConstant';
-import CustomTextComp from '../../../components/custom/CustomText';
+import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -22,11 +21,7 @@ const LoginView = () => {
 
   return (
     <Container>
-      <CustomTextComp>Login View</CustomTextComp>
-
-      <Spacer />
-
-      <ThemeTouchableOpacityComp
+      <CustomTouchableOpacityComp
         variant="text"
         color="success"
         size="small"
@@ -37,9 +32,11 @@ const LoginView = () => {
         }}
         onPress={() => navigation.navigate(AUTH_NAVIGATORS.REGISTER.name)}>
         Go to Register View
-      </ThemeTouchableOpacityComp>
+      </CustomTouchableOpacityComp>
 
-      <ThemeTouchableOpacityComp
+      <Spacer />
+
+      <CustomTouchableOpacityComp
         variant="text"
         color="error"
         size="small"
@@ -52,7 +49,7 @@ const LoginView = () => {
           navigation.navigate(AUTH_NAVIGATORS.FORGOT_PASSWORD.name)
         }>
         Go to Forgot Password View
-      </ThemeTouchableOpacityComp>
+      </CustomTouchableOpacityComp>
     </Container>
   );
 };

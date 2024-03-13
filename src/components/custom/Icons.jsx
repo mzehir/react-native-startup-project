@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const StyledMaterialIconsDefaultComp = styled(MaterialIcons)`
