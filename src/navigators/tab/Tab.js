@@ -4,12 +4,17 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = ({initialRouteName, screens, screenOptions = {}}) => {
-  const {...otherScreenOptions} = screenOptions;
+  const {headerRight, ...otherScreenOptions} = screenOptions;
   return (
     <Tab.Navigator
       initialRouteName={initialRouteName}
       screenOptions={{
         ...otherScreenOptions,
+        ...(headerRight
+          ? {
+              headerRight: () => headerRight(),
+            }
+          : {}),
       }}>
       {screens.map((item, index) => (
         <Tab.Screen
