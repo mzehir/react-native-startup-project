@@ -22,6 +22,9 @@ const defaultVariant = {
         paper: {
           background: '#FFFFFF',
         },
+        modal: {
+          background: '#FFFFFF',
+        },
       },
     },
     standard: {
@@ -100,6 +103,9 @@ const darkVariant = merge(defaultVariant, {
         },
         paper: {
           background: '#233044',
+        },
+        modal: {
+          background: '#383838',
         },
       },
     },

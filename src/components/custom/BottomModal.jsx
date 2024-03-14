@@ -2,9 +2,11 @@ import React from 'react';
 import styled from '@emotion/native';
 import ModalComp from '../core/Modal';
 import ViewComp from '../core/View';
+import CustomTextComp from './CustomText';
 import TouchableOpacityComp from '../core/TouchableOpacity';
-import TextComp from '../core/Text';
-import CloseSvg from '../../assets/icons/close.svg';
+import { MaterialCommunityIconsDefaultComp } from './Icons';
+import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
+import {SIZES} from '../../utils/constant/app/sizeConstant';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -22,7 +24,8 @@ const Wrapper = styled(ViewComp)`
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: white;
+  background-color: ${props =>
+    props.theme.palette.app.components.modal.background};
 `;
 
 const TitleWrapper = styled(ViewComp)`
@@ -76,10 +79,18 @@ const BottomModalComp = props => {
           <SpacerOne />
 
           <TitleWrapper>
-            <TextComp>{title ? title : ''}</TextComp>
+            <CustomTextComp
+              variant={TEXT_VARIANTS.TITLE.value}
+              size={SIZES.medium.value}>
+              {title ? title : ''}
+            </CustomTextComp>
 
             <CloseButton onPress={() => setVisible(false)}>
-              <CloseSvg />
+              {/* <CloseSvg /> */}
+              <MaterialCommunityIconsDefaultComp
+                name="close-box"
+                size={20}
+              />
             </CloseButton>
           </TitleWrapper>
 

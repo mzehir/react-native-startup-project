@@ -1,18 +1,20 @@
 import React, {useState} from 'react';
 import styled from '@emotion/native';
 import ViewComp from '../../core/View';
-import TextComp from '../../core/Text';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
+import CustomTextComp from '../CustomText';
 import BottomModalComp from '../BottomModal';
 import LanguageSelector from './LanguageSelector';
 import ThemeSelector from './ThemeSelector';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {
+  MaterialCommunityIconsDefaultComp,
+  MaterialIconsDefaultComp,
+} from '../Icons';
 
 const LanguageSelectorModal = ({visible, setVisible}) => {
   return (
     <BottomModalComp
-      title="Uygulama dilini güncelle"
+      title="common.selectALanguage"
       visible={visible}
       setVisible={setVisible}>
       <LanguageSelector />
@@ -23,7 +25,7 @@ const LanguageSelectorModal = ({visible, setVisible}) => {
 const ThemeSelectorModal = ({visible, setVisible}) => {
   return (
     <BottomModalComp
-      title="Uygulama temasını güncelle"
+      title="common.selectATheme"
       visible={visible}
       setVisible={setVisible}>
       <ThemeSelector />
@@ -53,13 +55,13 @@ const SettingsSection = () => {
   return (
     <Container>
       <RowButton onPress={() => setThemeSelectorModalVisible(true)}>
-        <MaterialCommunityIcons name="theme-light-dark" size={20} />
-        <TextComp>Tema Ayarları</TextComp>
+        <MaterialCommunityIconsDefaultComp name="theme-light-dark" size={20} />
+        <CustomTextComp>common.themeSettings</CustomTextComp>
       </RowButton>
 
       <RowButton onPress={() => setLanguageSelectorModalVisible(true)}>
-        <MaterialIcons name="language" size={20} />
-        <TextComp>Dil Ayarları</TextComp>
+        <MaterialIconsDefaultComp name="language" size={20} />
+        <CustomTextComp>common.languageSettings</CustomTextComp>
       </RowButton>
 
       <ThemeSelectorModal

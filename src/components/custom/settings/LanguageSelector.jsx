@@ -2,9 +2,8 @@ import React from 'react';
 import styled from '@emotion/native';
 import LanguageUseContext from '../../../hooks/LanguageUseContext';
 import ViewComp from '../../core/View';
-import TextComp from '../../core/Text';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
-import RadioComp from '../Radio';
+import CustomTextComp from '../CustomText';
 import {getLanguagesConstantAsArray} from '../../../utils/constant/languageConstant';
 
 const Container = styled(ViewComp)`
@@ -30,8 +29,7 @@ const LanguageSelector = () => {
         <LanguageItemButton
           key={index.toString()}
           onPress={() => setLanguage(item.key)}>
-          <RadioComp active={language === item.key} />
-          <TextComp>{translate(item.label)}</TextComp>
+          <CustomTextComp>{translate(item.label)}</CustomTextComp>
         </LanguageItemButton>
       ))}
     </Container>

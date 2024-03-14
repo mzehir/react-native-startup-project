@@ -6,7 +6,12 @@
     "welcome": "Willkommen bei meinem React Native Projekt",
     "langChangeButtonTextTr": "Die Anwendungssprache auf Türkisch ändern",
     "langChangeButtonTextEn": "Die Anwendungssprache auf Englisch ändern",
-    "langChangeButtonTextDe": "Die Anwendungssprache auf Deutsch ändern"
+    "langChangeButtonTextDe": "Die Anwendungssprache auf Deutsch ändern",
+    "themeSettings": "Theme-Einstellungen",
+    "languageSettings": "Spracheinstellungen",
+    "settings": "Einstellungen",
+    "selectATheme": "Ein Thema auswählen",
+    "selectALanguage": "Eine Sprache auswählen"
   },
   "components": {
     "buttonPlayground": "Button - Spielplatz",

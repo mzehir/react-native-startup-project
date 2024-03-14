@@ -6,7 +6,13 @@
     "welcome": "React Native projeme hoş geldin",
     "langChangeButtonTextTr": "Uygulama dilini Türkçe yap",
     "langChangeButtonTextEn": "Uygulama dilini İngilizce yap",
-    "langChangeButtonTextDe": "Uygulama dilini Almanca yap"
+    "langChangeButtonTextDe": "Uygulama dilini Almanca yap",
+    "themeSettings": "Tema Ayarları",
+    "languageSettings": "Dil Ayarları",
+    "settings": "Ayarlar",
+    "selectATheme": "Bir tema seç",
+    "selectALanguage": "Bir dil seç"
+
   },
   "components": {
     "buttonPlayground": "Button - Oyun Alanı",

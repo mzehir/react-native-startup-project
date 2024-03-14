@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from '@emotion/native';
 import ThemeUseContext from '../../../hooks/ThemeUseContext';
-import ViewComp from '../../core/View';
-import TextComp from '../../core/Text';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
-import RadioComp from '../Radio';
+import ViewComp from '../../core/View';
+import CustomTextComp from '../CustomText';
 import {getThemesConstantAsArray} from '../../../utils/constant/themeConstant';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {MaterialIconsDefaultComp} from '../Icons';
 
 const Container = styled(ViewComp)`
   flex-direction: column;
@@ -31,9 +30,8 @@ const ThemeSelector = () => {
         <ThemeItemButton
           key={index.toString()}
           onPress={() => setTheme(item.key)}>
-          <RadioComp active={theme === item.key} />
-          <MaterialIcons name={item.svgName} size={20} />
-          <TextComp>{item.label}</TextComp>
+          <MaterialIconsDefaultComp name={item.svgName} size={20} />
+          <CustomTextComp>{item.label}</CustomTextComp>
         </ThemeItemButton>
       ))}
     </Container>

@@ -1,4 +1,4 @@
-import React, {useState, createContext, useEffect} from 'react';
+import React, {useState, createContext} from 'react';
 import BottomModalComp from '../components/custom/BottomModal';
 import SettingsSection from '../components/custom/settings/Settings';
 
@@ -13,7 +13,7 @@ function AccessToGlobalSettingsProvider({children}) {
       <BottomModalComp
         visible={settingsModalVisible}
         setVisible={setSettingsModalVisible}
-        title="Ayarlar">
+        title="common.settings">
         <SettingsSection />
       </BottomModalComp>
 
