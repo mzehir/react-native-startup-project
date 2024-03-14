@@ -45,7 +45,7 @@ const ComponentsView = ({navigation}) => {
   const items = [
     {
       title: 'Button',
-      content: 'Uygulamanın sunduğu butonları görmek için tıkla',
+      content: 'components.componentsViewButtonDesc',
       name: COMPONENT_NAVIGATORS.BUTTON.name,
     },
   ];
@@ -72,6 +72,7 @@ const Item = ({navigation, title, content, name}) => {
     <ItemContainer>
       <ItemContent>
         <CustomTextComp
+          isTranslate={false}
           variant={TEXT_VARIANTS.TITLE.value}
           size={SIZES.medium.value}>
           {title}
@@ -87,7 +88,7 @@ const Item = ({navigation, title, content, name}) => {
       <ItemButtonContainer>
         <ViewComp
           style={{
-            width: '50%',
+            width: '60%',
           }}>
           <CustomTouchableOpacityComp
             variant={BUTTON_VARIANTS.TEXT.value}
@@ -99,7 +100,7 @@ const Item = ({navigation, title, content, name}) => {
               position: 'right',
             }}
             onPress={() => navigation.navigate(name)}>
-            Go to Detail
+            components.goToDetail
           </CustomTouchableOpacityComp>
         </ViewComp>
       </ItemButtonContainer>

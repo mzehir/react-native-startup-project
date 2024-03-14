@@ -7,5 +7,19 @@
     "langChangeButtonTextTr": "Change the application language to Turkish",
     "langChangeButtonTextEn": "Change the application language to English",
     "langChangeButtonTextDe": "Change the application language to German"
+  },
+  "components": {
+    "buttonPlayground": "Button - Playground",
+    "goToDetail": "Go to Detail",
+    "componentsViewButtonDesc": "If you wish, you can examine and customize the buttons offered by the application.",
+    "observeComponent": "Observe Component",
+    "customizeComponent": "Customize Component",
+    "selectSize": "Select size",
+    "selectColor": "Select color",
+    "selectVariant": "Select variant",
+    "selectRadius": "Select radius",
+    "addIcon": "Add icon",
+    "selectLocationForIcon": "Select location for icon",
+    "zzz": "zzz"
   }
 }

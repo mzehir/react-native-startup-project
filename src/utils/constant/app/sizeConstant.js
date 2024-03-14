@@ -1,7 +1,7 @@
 export const SIZES = {
-  small: {value: 'small', label: 'small'},
-  medium: {value: 'medium', label: 'medium'},
-  large: {value: 'large', label: 'large'},
+  small: {value: 'small', label: 'Small'},
+  medium: {value: 'medium', label: 'Medium'},
+  large: {value: 'large', label: 'Large'},
 };
 
 export const getSizesConstantAsArray = () => {

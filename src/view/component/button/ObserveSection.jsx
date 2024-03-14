@@ -22,7 +22,7 @@ const ObserveSection = ({
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
           color={COLORS.INFO.value}>
-          Bileşeni Gözlemle
+          components.observeComponent
         </CustomTextComp>
 
         <CustomTouchableOpacityComp

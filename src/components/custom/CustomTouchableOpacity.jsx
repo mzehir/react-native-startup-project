@@ -76,6 +76,7 @@ const CustomTouchableOpacityComp = ({
   variant = BUTTON_VARIANTS.CONTAINED.value,
   radius = BUTTON_RADIUS.FEW.value,
   iconFields = {position: '', component: undefined, name: ''},
+  isTranslate = true,
   children,
   ...props
 }) => {
@@ -88,6 +89,7 @@ const CustomTouchableOpacityComp = ({
       iconFields={iconFields}
       {...props}>
       <CustomTextComp
+        isTranslate={isTranslate}
         variant={TEXT_VARIANTS.FOR_BUTTON.value}
         size={size}
         colorType={

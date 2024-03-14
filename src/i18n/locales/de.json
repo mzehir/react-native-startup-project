@@ -7,5 +7,19 @@
     "langChangeButtonTextTr": "Die Anwendungssprache auf Türkisch ändern",
     "langChangeButtonTextEn": "Die Anwendungssprache auf Englisch ändern",
     "langChangeButtonTextDe": "Die Anwendungssprache auf Deutsch ändern"
+  },
+  "components": {
+    "buttonPlayground": "Button - Spielplatz",
+    "goToDetail": "Zu den Details",
+    "componentsViewButtonDesc": "Wenn Sie möchten, können Sie die von der Anwendung angebotenen Schaltflächen untersuchen und anpassen.",
+    "observeComponent": "Komponente beobachten",
+    "customizeComponent": "Komponente anpassen",
+    "selectSize": "Größe auswählen",
+    "selectColor": "Farbe auswählen",
+    "selectVariant": "Variante auswählen",
+    "selectRadius": "Radius auswählen",
+    "addIcon": "Symbol hinzufügen",
+    "selectLocationForIcon": "Ort für das Symbol auswählen",
+    "zzz": "zzz"
   }
 }

@@ -64,12 +64,12 @@ const CustomizeSection = ({
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
           color={COLORS.INFO.value}>
-          Bileşeni Özelleştir
+          components.customizeComponent
         </CustomTextComp>
 
         <RowContainer>
           <LeftColumn>
-            <CustomTextComp>Boyut seç</CustomTextComp>
+            <CustomTextComp>components.selectSize</CustomTextComp>
           </LeftColumn>
 
           <RightColumn>
@@ -88,7 +88,7 @@ const CustomizeSection = ({
 
         <RowContainer>
           <LeftColumn>
-            <CustomTextComp>Renk seç</CustomTextComp>
+            <CustomTextComp>components.selectColor</CustomTextComp>
           </LeftColumn>
 
           <RightColumn>
@@ -107,7 +107,7 @@ const CustomizeSection = ({
 
         <RowContainer>
           <LeftColumn>
-            <CustomTextComp>Varyant seç</CustomTextComp>
+            <CustomTextComp>components.selectVariant</CustomTextComp>
           </LeftColumn>
 
           <RightColumn>
@@ -126,7 +126,7 @@ const CustomizeSection = ({
 
         <RowContainer>
           <LeftColumn>
-            <CustomTextComp>Bir yarıçap seç</CustomTextComp>
+            <CustomTextComp>components.selectRadius</CustomTextComp>
           </LeftColumn>
 
           <RightColumn>
@@ -145,7 +145,7 @@ const CustomizeSection = ({
 
         <RowContainer>
           <LeftColumn>
-            <CustomTextComp>İkon ekle</CustomTextComp>
+            <CustomTextComp>components.addIcon</CustomTextComp>
           </LeftColumn>
 
           <RightColumn>
@@ -161,7 +161,7 @@ const CustomizeSection = ({
         {iconVisible && (
           <RowContainer>
             <LeftColumn>
-              <CustomTextComp>Bir ikon konumu seç</CustomTextComp>
+              <CustomTextComp>components.selectLocationForIcon</CustomTextComp>
             </LeftColumn>
 
             <RightColumn>
