@@ -1,39 +1,42 @@
 import React from 'react';
+import styled from '@emotion/native';
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
+import CustomTextComp from '../../../components/custom/CustomText';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
+import CustomCheckboxComp from '../../../components/custom/CustomCheckbox';
+import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
+import {
+  COLORS,
+  getColorsConstantAsArray,
+} from '../../../utils/constant/app/colorConstant';
+import {getSizesConstantAsArray} from '../../../utils/constant/app/sizeConstant';
+import {getButtonVariantsConstantAsArray} from '../../../utils/constant/app/buttonVariantConstant';
+import {getButtonRadiusConstantAsArray} from '../../../utils/constant/app/buttonRadiusConstant';
 
-const sizeOptions = [
-  {label: 'Small', value: 'small'},
-  {label: 'Medium', value: 'medium'},
-  {label: 'Large', value: 'large'},
-];
+const RowContainer = styled(ViewComp)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+`;
 
-const colorOptions = [
-  {label: 'Error', value: 'error'},
-  {label: 'Info', value: 'info'},
-  {label: 'Primary', value: 'primary'},
-  {label: 'Secondary', value: 'secondary'},
-  {label: 'Success', value: 'success'},
-  {label: 'Warning', value: 'warning'},
-];
+const LeftColumn = styled(ViewComp)`
+  width: 50%;
+`;
 
-const variantOptions = [
-  {label: 'Text', value: 'text'},
-  {label: 'Outlined', value: 'outlined'},
-  {label: 'Contained', value: 'contained'},
-];
+const RightColumn = styled(ViewComp)`
+  width: 50%;
+`;
 
-const radiusOptions = [
-  {label: 'Little', value: 'little'},
-  {label: 'Few', value: 'few'},
-  {label: 'Normal', value: 'normal'},
-  {label: 'More', value: 'more'},
-  {label: 'Much', value: 'much'},
-  {label: 'Plenty', value: 'plenty'},
-  {label: 'Many', value: 'many'},
-  {label: 'None', value: 'none'},
-];
+const sizeOptions = getSizesConstantAsArray();
+
+const colorOptions = getColorsConstantAsArray();
+
+const variantOptions = getButtonVariantsConstantAsArray();
+
+const radiusOptions = getButtonRadiusConstantAsArray();
 
 const iconPositionOptions = [
   {label: 'Left', value: 'left'},
@@ -58,60 +61,123 @@ const CustomizeSection = ({
   return (
     <PaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
-        <ReactNativeElementDropdown
-          search={false}
-          data={sizeOptions}
-          value={selectedSize}
-          setValue={item => {
-            if (typeof item === 'object') {
-              setSelectedSize(item.value);
-            }
-          }}
-        />
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          color={COLORS.INFO.value}>
+          Bileşeni Özelleştir
+        </CustomTextComp>
 
-        <ReactNativeElementDropdown
-          search={false}
-          data={colorOptions}
-          value={selectedColor}
-          setValue={item => {
-            if (typeof item === 'object') {
-              setSelectedColor(item.value);
-            }
-          }}
-        />
+        <RowContainer>
+          <LeftColumn>
+            <CustomTextComp>Boyut seç</CustomTextComp>
+          </LeftColumn>
 
-        <ReactNativeElementDropdown
-          search={false}
-          data={variantOptions}
-          value={selectedVariant}
-          setValue={item => {
-            if (typeof item === 'object') {
-              setSelectedVariant(item.value);
-            }
-          }}
-        />
+          <RightColumn>
+            <ReactNativeElementDropdown
+              search={false}
+              data={sizeOptions}
+              value={selectedSize}
+              setValue={item => {
+                if (typeof item === 'object') {
+                  setSelectedSize(item.value);
+                }
+              }}
+            />
+          </RightColumn>
+        </RowContainer>
 
-        <ReactNativeElementDropdown
-          search={false}
-          data={radiusOptions}
-          value={selectedRadius}
-          setValue={item => {
-            if (typeof item === 'object') {
-              setSelectedRadius(item.value);
-            }
-          }}
-        />
+        <RowContainer>
+          <LeftColumn>
+            <CustomTextComp>Renk seç</CustomTextComp>
+          </LeftColumn>
 
-        <ReactNativeElementDropdown
-          search={false}
-          data={iconPositionOptions}
-          value={selectedIconPosition}
-          setValue={item => {
-            if (typeof item === 'object') {
-              setSelectedIconPosition(item.value);
-            }
-          }}
-        />
+          <RightColumn>
+            <ReactNativeElementDropdown
+              search={false}
+              data={colorOptions}
+              value={selectedColor}
+              setValue={item => {
+                if (typeof item === 'object') {
+                  setSelectedColor(item.value);
+                }
+              }}
+            />
+          </RightColumn>
+        </RowContainer>
+
+        <RowContainer>
+          <LeftColumn>
+            <CustomTextComp>Varyant seç</CustomTextComp>
+          </LeftColumn>
+
+          <RightColumn>
+            <ReactNativeElementDropdown
+              search={false}
+              data={variantOptions}
+              value={selectedVariant}
+              setValue={item => {
+                if (typeof item === 'object') {
+                  setSelectedVariant(item.value);
+                }
+              }}
+            />
+          </RightColumn>
+        </RowContainer>
+
+        <RowContainer>
+          <LeftColumn>
+            <CustomTextComp>Bir yarıçap seç</CustomTextComp>
+          </LeftColumn>
+
+          <RightColumn>
+            <ReactNativeElementDropdown
+              search={false}
+              data={radiusOptions}
+              value={selectedRadius}
+              setValue={item => {
+                if (typeof item === 'object') {
+                  setSelectedRadius(item.value);
+                }
+              }}
+            />
+          </RightColumn>
+        </RowContainer>
+
+        <RowContainer>
+          <LeftColumn>
+            <CustomTextComp>İkon ekle</CustomTextComp>
+          </LeftColumn>
+
+          <RightColumn>
+            <CustomCheckboxComp
+              checked={iconVisible}
+              onChange={value => {
+                setIconVisible(value);
+              }}
+            />
+          </RightColumn>
+        </RowContainer>
+
+        {iconVisible && (
+          <RowContainer>
+            <LeftColumn>
+              <CustomTextComp>Bir ikon konumu seç</CustomTextComp>
+            </LeftColumn>
+
+            <RightColumn>
+              <ReactNativeElementDropdown
+                search={false}
+                data={iconPositionOptions}
+                value={selectedIconPosition}
+                setValue={item => {
+                  if (typeof item === 'object') {
+                    setSelectedIconPosition(item.value);
+                  }
+                }}
+              />
+            </RightColumn>
+          </RowContainer>
+        )}
       </ViewComp>
     </PaperComp>
   );
