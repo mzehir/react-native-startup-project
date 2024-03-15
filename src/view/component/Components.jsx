@@ -26,7 +26,7 @@ const ItemContainer = styled(ViewComp)`
   justify-content: space-between;
   padding-vertical: 15px;
   padding-horizontal: 15px;
-  height: 200px;
+  height: 170px;
   width: 170px;
 `;
 
