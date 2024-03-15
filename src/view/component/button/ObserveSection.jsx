@@ -20,6 +20,7 @@ const ObserveSection = ({
     <PaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
         <CustomTextComp
+          style={{textAlign: 'center'}}
           variant={TEXT_VARIANTS.TITLE.value}
           color={COLORS.INFO.value}>
           components.observeComponent

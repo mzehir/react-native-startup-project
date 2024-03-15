@@ -8,7 +8,7 @@ import ReadyComponentsSection from './ReadyComponentsSection';
 const Container = styled(ViewComp)`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 `;
 
 const sectionPaperPadding = {
@@ -39,7 +39,7 @@ const TextPlayground = () => {
         setSelectedVariant={setSelectedVariant}
       />
 
-      <ReadyComponentsSection />
+      <ReadyComponentsSection sectionPaperPadding={sectionPaperPadding} />
     </Container>
   );
 };
