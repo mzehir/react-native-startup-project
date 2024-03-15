@@ -101,12 +101,7 @@ const ReadyComponentsSection = () => {
         color={COLORS.ERROR.value}
         variant={BUTTON_VARIANTS.CONTAINED.value}
         radius={BUTTON_RADIUS.FEW.value}
-        size={SIZES.small.value}
-        iconFields={{
-          component: MaterialIconsDefaultComp,
-          name: 'arrow-forward',
-          position: 'right',
-        }}>
+        size={SIZES.small.value}>
         Button 1
       </CustomTouchableOpacityComp>
 
@@ -114,12 +109,7 @@ const ReadyComponentsSection = () => {
         color={COLORS.INFO.value}
         variant={BUTTON_VARIANTS.CONTAINED.value}
         radius={BUTTON_RADIUS.NORMAL.value}
-        size={SIZES.small.value}
-        iconFields={{
-          component: MaterialIconsDefaultComp,
-          name: 'arrow-forward',
-          position: 'right',
-        }}>
+        size={SIZES.small.value}>
         Button 2
       </CustomTouchableOpacityComp>
 
@@ -127,12 +117,7 @@ const ReadyComponentsSection = () => {
         color={COLORS.PRIMARY.value}
         variant={BUTTON_VARIANTS.CONTAINED.value}
         radius={BUTTON_RADIUS.MORE.value}
-        size={SIZES.small.value}
-        iconFields={{
-          component: MaterialIconsDefaultComp,
-          name: 'arrow-forward',
-          position: 'right',
-        }}>
+        size={SIZES.small.value}>
         Button 3
       </CustomTouchableOpacityComp>
 
@@ -140,12 +125,7 @@ const ReadyComponentsSection = () => {
         color={COLORS.SECONDARY.value}
         variant={BUTTON_VARIANTS.CONTAINED.value}
         radius={BUTTON_RADIUS.MUCH.value}
-        size={SIZES.small.value}
-        iconFields={{
-          component: MaterialIconsDefaultComp,
-          name: 'arrow-forward',
-          position: 'right',
-        }}>
+        size={SIZES.small.value}>
         Button 4
       </CustomTouchableOpacityComp>
 
@@ -153,12 +133,7 @@ const ReadyComponentsSection = () => {
         color={COLORS.SUCCESS.value}
         variant={BUTTON_VARIANTS.CONTAINED.value}
         radius={BUTTON_RADIUS.PLENTY.value}
-        size={SIZES.small.value}
-        iconFields={{
-          component: MaterialIconsDefaultComp,
-          name: 'arrow-forward',
-          position: 'right',
-        }}>
+        size={SIZES.small.value}>
         Button 5
       </CustomTouchableOpacityComp>
 
@@ -166,12 +141,7 @@ const ReadyComponentsSection = () => {
         color={COLORS.WARNING.value}
         variant={BUTTON_VARIANTS.CONTAINED.value}
         radius={BUTTON_RADIUS.MANY.value}
-        size={SIZES.small.value}
-        iconFields={{
-          component: MaterialIconsDefaultComp,
-          name: 'arrow-forward',
-          position: 'right',
-        }}>
+        size={SIZES.small.value}>
         Button 6
       </CustomTouchableOpacityComp>
 
