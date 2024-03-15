@@ -1,13 +1,8 @@
 import React from 'react';
 import ViewComp from '../../../components/core/View';
-import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
-import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
-
+import CustomTextComp from '../../../components/custom/CustomText';
 import {SIZES} from '../../../utils/constant/app/sizeConstant';
 import {COLORS} from '../../../utils/constant/app/colorConstant';
-import {BUTTON_VARIANTS} from '../../../utils/constant/app/buttonVariantConstant';
-import {BUTTON_RADIUS} from '../../../utils/constant/app/buttonRadiusConstant';
-import CustomTextComp from '../../../components/custom/CustomText';
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 
 const ReadyComponentsSection = () => {

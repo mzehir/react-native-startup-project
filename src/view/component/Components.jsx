@@ -49,6 +49,11 @@ const ComponentsView = ({navigation}) => {
       name: COMPONENT_NAVIGATORS.TEXT.name,
     },
     {
+      title: 'Icon',
+      content: 'components.componentsViewIconDesc',
+      name: COMPONENT_NAVIGATORS.ICON.name,
+    },
+    {
       title: 'Button',
       content: 'components.componentsViewButtonDesc',
       name: COMPONENT_NAVIGATORS.BUTTON.name,

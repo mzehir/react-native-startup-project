@@ -3,6 +3,7 @@ import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 import TextPlayground from '../../view/component/text/TextPlayground';
+import IconPlayground from '../../view/component/icon/IconPlayground';
 
 import CustomTextComp from '../../components/custom/CustomText';
 import {TEXT_VARIANTS} from './app/textVariantConstant';
@@ -46,6 +47,27 @@ export const COMPONENT_NAVIGATORS = {
     ),
     options: {
       title: 'components.typographyPlayground',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+    },
+  },
+
+  ICON: {
+    name: 'icon',
+    component: props => (
+      <ScrollViewDefault>
+        <DefaultLayout>
+          <IconPlayground {...props} />
+        </DefaultLayout>
+      </ScrollViewDefault>
+    ),
+    options: {
+      title: 'components.iconPlayground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}

@@ -30,11 +30,11 @@ const RightColumn = styled(ViewComp)`
   width: 50%;
 `;
 
-const sizeOptions = getSizesConstantAsArray(); // Ok
+const sizeOptions = getSizesConstantAsArray();
 
-const colorOptions = getColorsConstantAsArray(); // Ok
+const colorOptions = getColorsConstantAsArray();
 
-const variantOptions = getTextVariantsConstantAsArray(); // Ok
+const variantOptions = getTextVariantsConstantAsArray();
 
 const CustomizeSection = ({
   sectionPaperPadding,

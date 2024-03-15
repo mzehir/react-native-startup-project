@@ -17,9 +17,11 @@
   "components": {
     "buttonPlayground": "Button - Oyun Alanı",
     "typographyPlayground": "Typography - Oyun Alanı",
+    "iconPlayground": "Icon - Oyun Alanı",
     "goToDetail": "Detaya Git",
     "componentsViewButtonDesc": "Dilersen uygulamanın sunduğu buttonları inceleyebilir ve özelleştirebilirsin.",
     "componentsViewTypographyDesc": "Dilersen uygulamanın sunduğu tipografileri inceleyebilir ve özelleştirebilirsin.",
+    "componentsViewIconDesc": "Dilersen uygulamanın sunduğu ikon özelliklerini inceleyebilir.",
     "observeComponent": "Bileşeni Gözlemle",
     "customizeComponent": "Bileşeni Özelleştir",
     "selectSize": "Boyut seç",
