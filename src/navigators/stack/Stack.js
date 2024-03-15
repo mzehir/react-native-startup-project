@@ -6,7 +6,7 @@ const Stack = createNativeStackNavigator();
 
 const StackNavigator = ({initialRouteName, screens, screenOptions = {}}) => {
   const navigationHook = useNavigation();
-  const {headerLeft, ...otherScreenOptions} = screenOptions;
+  const {headerLeft, headerRight, ...otherScreenOptions} = screenOptions;
 
   return (
     <Stack.Navigator
@@ -17,6 +17,12 @@ const StackNavigator = ({initialRouteName, screens, screenOptions = {}}) => {
         ...(headerLeft
           ? {
               headerLeft: props => headerLeft(props, navigationHook),
+            }
+          : {}),
+
+        ...(headerRight
+          ? {
+              headerRight: () => headerRight(),
             }
           : {}),
       }}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useTheme} from '@emotion/react';
 import StackNavigator from '../stack/Stack';
+import AccessToGlobalSettingsUseContext from '../../hooks/AccessToGlobalSettingsUseContext';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import TouchableOpacityComp from '../../components/core/TouchableOpacity';
 import {
@@ -12,6 +13,7 @@ const {initialRouteName, screens} = getComponentNavigatorsConstantAsArray();
 
 const ComponentNavigator = () => {
   const themeHook = useTheme();
+  const {setSettingsModalVisible} = AccessToGlobalSettingsUseContext();
 
   let screenOptions = {
     headerStyle: {
@@ -29,6 +31,12 @@ const ComponentNavigator = () => {
         </TouchableOpacityComp>
       ) : null;
     },
+
+    headerRight: () => (
+      <TouchableOpacityComp onPress={() => setSettingsModalVisible()}>
+        <MaterialIconsDefaultComp name="settings" size={20} />
+      </TouchableOpacityComp>
+    ),
   };
 
   return (
