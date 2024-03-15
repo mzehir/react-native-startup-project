@@ -2,7 +2,6 @@ import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import HomeView from '../../view/home/home/Home';
 import ComponentNavigator from '../../navigators/custom/ComponentNavigator';
-import ProfileView from '../../view/home/profile/Profile';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import CustomTextComp from '../../components/custom/CustomText';
 import {TEXT_VARIANTS} from './app/textVariantConstant';
@@ -45,30 +44,6 @@ export const HOME_NAVIGATORS = {
           size={size}
           active={focused}
         />
-      ),
-    },
-  },
-
-  PROFILE: {
-    name: 'profile',
-    component: props => (
-      <ScrollViewDefault>
-        <DefaultLayout>
-          <ProfileView {...props} />
-        </DefaultLayout>
-      </ScrollViewDefault>
-    ),
-    options: {
-      title: 'Profile',
-      headerTitle: props => (
-        <CustomTextComp
-          variant={TEXT_VARIANTS.TITLE.value}
-          size={SIZES.medium.value}>
-          {props.children}
-        </CustomTextComp>
-      ),
-      tabBarIcon: ({size, focused}) => (
-        <MaterialIconsDefaultComp name="person" size={size} active={focused} />
       ),
     },
   },
