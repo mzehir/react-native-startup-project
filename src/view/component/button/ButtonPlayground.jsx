@@ -3,6 +3,7 @@ import styled from '@emotion/native';
 import ViewComp from '../../../components/core/View';
 import ObserveSection from './ObserveSection';
 import CustomizeSection from './CustomizeSection';
+import ReadyComponentsSection from './ReadyComponentsSection';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -49,6 +50,8 @@ const ButtonPlayground = () => {
         iconVisible={iconVisible}
         setIconVisible={setIconVisible}
       />
+
+      <ReadyComponentsSection />
     </Container>
   );
 };
