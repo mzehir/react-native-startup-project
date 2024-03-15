@@ -15,8 +15,10 @@
   },
   "components": {
     "buttonPlayground": "Button - Spielplatz",
+    "typographyPlayground": "Typography - Spielplatz",
     "goToDetail": "Zu den Details",
     "componentsViewButtonDesc": "Wenn Sie möchten, können Sie die von der Anwendung angebotenen Schaltflächen untersuchen und anpassen.",
+    "componentsViewTypographyDesc": "Wenn Sie möchten, können Sie die von der App angebotenen Typografien überprüfen und anpassen.",
     "observeComponent": "Komponente beobachten",
     "customizeComponent": "Komponente anpassen",
     "selectSize": "Größe auswählen",

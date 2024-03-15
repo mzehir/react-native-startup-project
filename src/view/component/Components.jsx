@@ -44,6 +44,11 @@ const ItemButtonContainer = styled(ViewComp)`
 const ComponentsView = ({navigation}) => {
   const items = [
     {
+      title: 'Typography',
+      content: 'components.componentsViewTypographyDesc',
+      name: COMPONENT_NAVIGATORS.TEXT.name,
+    },
+    {
       title: 'Button',
       content: 'components.componentsViewButtonDesc',
       name: COMPONENT_NAVIGATORS.BUTTON.name,

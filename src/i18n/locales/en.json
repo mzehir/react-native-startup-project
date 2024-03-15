@@ -15,8 +15,10 @@
   },
   "components": {
     "buttonPlayground": "Button - Playground",
+    "typographyPlayground": "Typography - Playground",
     "goToDetail": "Go to Detail",
     "componentsViewButtonDesc": "If you wish, you can examine and customize the buttons offered by the application.",
+    "componentsViewTypographyDesc": "If you wish, you can review and customize the typographies offered by the app.",
     "observeComponent": "Observe Component",
     "customizeComponent": "Customize Component",
     "selectSize": "Select size",

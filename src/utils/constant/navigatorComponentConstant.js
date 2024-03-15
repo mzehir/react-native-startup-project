@@ -2,6 +2,8 @@ import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
+import TextPlayground from '../../view/component/text/TextPlayground';
+
 import CustomTextComp from '../../components/custom/CustomText';
 import {TEXT_VARIANTS} from './app/textVariantConstant';
 import {SIZES} from './app/sizeConstant';
@@ -31,6 +33,27 @@ export const COMPONENT_NAVIGATORS = {
       },
     },
     initialRouteName: true,
+  },
+
+  TEXT: {
+    name: 'text',
+    component: props => (
+      <ScrollViewDefault>
+        <DefaultLayout>
+          <TextPlayground {...props} />
+        </DefaultLayout>
+      </ScrollViewDefault>
+    ),
+    options: {
+      title: 'components.typographyPlayground',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+    },
   },
 
   BUTTON: {
