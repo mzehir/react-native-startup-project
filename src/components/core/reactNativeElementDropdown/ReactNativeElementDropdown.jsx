@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {useTheme} from '@emotion/react';
-import {View} from 'react-native';
 import {Dropdown} from 'react-native-element-dropdown';
+import ViewComp from '../View';
 
 const ReactNativeElementDropdown = ({
   data = [], //* [{label: "", value: ""}]
   value = '',
-  setValue, // function
+  setValue,
   mode = 'default', //* auto || default || modal
   dropdownPosition = 'auto', //* auto || top ||bottom
   disable = false,
@@ -14,35 +14,32 @@ const ReactNativeElementDropdown = ({
   searchPlaceholder = 'Bir değer ara',
   search = true,
   maxHeight = 300,
+  size = 'small', //* small || medium || large
 }) => {
   const themeHook = useTheme();
   const [isFocus, setIsFocus] = useState(false);
 
   const style = {
-    height: 50,
-    paddingHorizontal: 8,
-
+    height: size === 'small' ? 35 : size === 'medium' ? 45 : 50,
+    paddingHorizontal: size === 'small' ? 6 : size === 'medium' ? 8 : 10,
     backgroundColor:
       themeHook.palette.app.components.elementDropdown.inputBackground,
-
     borderColor: isFocus
-      ? themeHook.palette.app.components.elementDropdown
-          .inputBorderColorFocus
+      ? themeHook.palette.app.components.elementDropdown.inputBorderColorFocus
       : themeHook.palette.app.components.elementDropdown.inputBorderColor,
-
     borderWidth: 1,
     borderRadius: 8,
   };
 
   const placeholderStyle = {
-    fontSize: 16,
-
-    color:
-      themeHook.palette.app.components.elementDropdown.placeholderColor,
+    fontSize: themeHook.typography.forSelect[size].fontSize,
+    fontWeight: themeHook.typography.forSelect[size].fontWeight,
+    color: themeHook.palette.app.components.elementDropdown.placeholderColor,
   };
 
   const selectedTextStyle = {
-    fontSize: 16,
+    fontSize: themeHook.typography.forSelect[size].fontSize,
+    fontWeight: themeHook.typography.forSelect[size].fontWeight,
     color: themeHook.palette.app.components.elementDropdown.textColor,
   };
 
@@ -53,20 +50,22 @@ const ReactNativeElementDropdown = ({
   };
 
   const inputSearchStyle = {
-    height: 40,
-    fontSize: 16,
+    height: size === 'small' ? 30 : size === 'medium' ? 35 : 40,
+    padding: 0,
+    fontSize: themeHook.typography.forSelect[size].fontSize,
+    fontWeight: themeHook.typography.forSelect[size].fontWeight,
     borderWidth: 0,
     borderBottomWidth: 1,
-
     borderColor:
       themeHook.palette.app.components.elementDropdown.inputBorderColor,
-
-    color:
-      themeHook.palette.app.components.elementDropdown.placeholderColor,
+    color: themeHook.palette.app.components.elementDropdown.placeholderColor,
   };
 
   const itemTextStyle = {
+    fontSize: themeHook.typography.forSelect[size].fontSize,
+    fontWeight: themeHook.typography.forSelect[size].fontWeight,
     color: themeHook.palette.app.components.elementDropdown.textColor,
+    margin: -10,
   };
 
   const activeColor =
@@ -77,18 +76,17 @@ const ReactNativeElementDropdown = ({
   };
 
   return (
-    <View style={{width: '100%'}}>
+    <ViewComp style={{width: '100%'}}>
       <Dropdown
-        //* Styled
         style={style}
         placeholderStyle={placeholderStyle}
         selectedTextStyle={selectedTextStyle}
         containerStyle={containerStyle}
+        itemContainerStyle={{}}
         itemTextStyle={itemTextStyle}
         inputSearchStyle={inputSearchStyle}
         activeColor={activeColor}
         iconStyle={iconStyle}
-        //* Setting Props
         mode={mode}
         dropdownPosition={dropdownPosition}
         disable={disable}
@@ -98,7 +96,6 @@ const ReactNativeElementDropdown = ({
         searchPlaceholder={searchPlaceholder}
         maxHeight={maxHeight}
         search={search}
-        //* Other
         data={data}
         value={value}
         onFocus={() => setIsFocus(true)}
@@ -108,7 +105,7 @@ const ReactNativeElementDropdown = ({
           setIsFocus(false);
         }}
       />
-    </View>
+    </ViewComp>
   );
 };
 
