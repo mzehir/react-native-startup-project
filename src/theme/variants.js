@@ -19,6 +19,13 @@ const defaultVariant = {
           placeholderColor: '#A4A4A4',
           textColor: '#212121',
         },
+        input: {
+          backgroundColor: '#FFFFFF',
+          textColor: '#212121',
+          placeholderColor: '#A4A4A4',
+          borderColor: '#C4C4C4',
+          borderColorFocus: '#1976D2',
+        },
         paper: {
           background: '#FFFFFF',
         },
@@ -100,6 +107,13 @@ const darkVariant = merge(defaultVariant, {
           inputBorderColorFocus: '#407AD6',
           placeholderColor: '#56606F',
           textColor: '#FFFFFF',
+        },
+        input: {
+          backgroundColor: '#233044',
+          textColor: '#FFFFFF',
+          placeholderColor: '#56606F',
+          borderColor: '#484C50',
+          borderColorFocus: '#90CAF9',
         },
         paper: {
           background: '#233044',
