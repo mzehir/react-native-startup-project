@@ -11,8 +11,8 @@
     "languageSettings": "Dil Ayarları",
     "settings": "Ayarlar",
     "selectATheme": "Bir tema seç",
-    "selectALanguage": "Bir dil seç"
-
+    "selectALanguage": "Bir dil seç",
+    "enterText": "Metin gir..."
   },
   "components": {
     "buttonPlayground": "Button - Oyun Alanı",
@@ -26,12 +26,12 @@
     "customizeComponent": "Bileşeni Özelleştir",
     "readyComponents": "Hazır Bileşenler",
     "selectSize": "Boyut seç",
+    "enterSize": "Boyut gir",
     "selectColor": "Renk seç",
     "selectVariant": "Varyant seç",
     "selectRadius": "Yarıçap seç",
     "addIcon": "İkon ekle",
     "selectLocationForIcon": "İkon için konum seç",
-
     "zzz": "zzz"
   }
 }

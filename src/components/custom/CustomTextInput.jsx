@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styled from '@emotion/native';
 import {useTheme} from '@emotion/react';
 import {TouchableOpacity} from 'react-native';
+import LanguageUseContext from '../../hooks/LanguageUseContext';
 import ViewComp from '../core/View';
 import TextInputComp from '../core/TextInput';
 import {MaterialCommunityIconsDefaultComp} from './Icons';
@@ -13,7 +14,7 @@ const keyboardTypes = ['default', 'numeric'];
 const typesOfUse = ['default', 'password', 'search'];
 const defColor = COLORS.STANDARD.value;
 const defSize = SIZES.small.value;
-const defPlaceholder = 'Enter text...';
+const defPlaceholder = 'common.enterText';
 
 const Container = styled(ViewComp)`
   flex-direction: row;
@@ -58,24 +59,27 @@ const StyledTextInput = styled(TextInputComp)`
 `;
 
 const CustomTextInput = ({
-  keyboardType = keyboardTypes[0],
-  typeOfUse = typesOfUse[2],
+  keyboardType = keyboardTypes[1],
+  typeOfUse = typesOfUse[0],
   color = defColor,
   size = defSize,
   placeholder = defPlaceholder,
   iconFields,
+  isTranslation = true,
   disabled = false,
+  text,
+  setText,
 }) => {
   const themeHook = useTheme();
+  const {translate} = LanguageUseContext();
   const iconSize = ICON_SIZES[size].size;
 
   const [showPassword, setShowPassword] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
-  const [text, setText] = useState('');
 
   return (
     <Container isFocus={isFocused} color={color} size={size}>
-      {typeOfUse === 'default' &&
+      {typeOfUse === typesOfUse[0] &&
         iconFields?.component &&
         iconFields?.position == 'start' && (
           <iconFields.component
@@ -88,7 +92,9 @@ const CustomTextInput = ({
       <StyledTextInput
         size={size}
         keyboardType={keyboardType}
-        placeholder={placeholder}
+        placeholder={
+          (isTranslation = true ? translate(placeholder) : placeholder)
+        }
         placeholderTextColor={
           themeHook.palette.app.components.input.placeholderColor
         }
@@ -96,11 +102,11 @@ const CustomTextInput = ({
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         onChangeText={setText}
-        secureTextEntry={typeOfUse === 'password' && !showPassword}
+        secureTextEntry={typeOfUse === typesOfUse[1] && !showPassword}
         editable={!disabled}
       />
 
-      {typeOfUse === 'search' && text !== '' && (
+      {typeOfUse === typesOfUse[2] && text !== '' && (
         <TouchableOpacity onPress={() => setText('')}>
           <MaterialCommunityIconsDefaultComp
             style={{marginLeft: 3}}
@@ -110,7 +116,7 @@ const CustomTextInput = ({
         </TouchableOpacity>
       )}
 
-      {typeOfUse === 'password' && (
+      {typeOfUse === typesOfUse[1] && (
         <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
           <MaterialCommunityIconsDefaultComp
             style={{marginLeft: 3}}
@@ -120,7 +126,7 @@ const CustomTextInput = ({
         </TouchableOpacity>
       )}
 
-      {typeOfUse === 'default' &&
+      {typeOfUse === typesOfUse[0] &&
         iconFields?.component &&
         iconFields?.position == 'end' && (
           <iconFields.component

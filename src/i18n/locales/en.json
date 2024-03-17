@@ -11,7 +11,8 @@
     "languageSettings": "Language Settings",
     "settings": "Settings",
     "selectATheme": "Select a theme",
-    "selectALanguage": "Select a language"
+    "selectALanguage": "Select a language",
+    "enterText": "Enter text..."
   },
   "components": {
     "buttonPlayground": "Button - Playground",
@@ -25,6 +26,7 @@
     "customizeComponent": "Customize Component",
     "readyComponents": "Ready Components",
     "selectSize": "Select size",
+    "enterSize": "Enter size",
     "selectColor": "Select color",
     "selectVariant": "Select variant",
     "selectRadius": "Select radius",

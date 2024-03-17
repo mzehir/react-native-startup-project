@@ -11,7 +11,8 @@
     "languageSettings": "Spracheinstellungen",
     "settings": "Einstellungen",
     "selectATheme": "Ein Thema auswählen",
-    "selectALanguage": "Eine Sprache auswählen"
+    "selectALanguage": "Eine Sprache auswählen",
+    "enterText": "Text eingeben..."
   },
   "components": {
     "buttonPlayground": "Button - Spielplatz",
@@ -25,6 +26,7 @@
     "customizeComponent": "Komponente anpassen",
     "readyComponents": "Fertige Komponenten",
     "selectSize": "Größe auswählen",
+    "enterSize": "Größe eingeben",
     "selectColor": "Farbe auswählen",
     "selectVariant": "Variante auswählen",
     "selectRadius": "Radius auswählen",
