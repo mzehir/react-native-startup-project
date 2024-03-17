@@ -4,6 +4,7 @@ import ComponentsView from '../../view/component/Components';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 import TextPlayground from '../../view/component/text/TextPlayground';
 import IconPlayground from '../../view/component/icon/IconPlayground';
+import CheckboxPlayground from '../../view/component/checkbox/CheckboxPlayground';
 
 import CustomTextComp from '../../components/custom/CustomText';
 import {TEXT_VARIANTS} from './app/textVariantConstant';
@@ -47,6 +48,27 @@ export const COMPONENT_NAVIGATORS = {
     ),
     options: {
       title: 'components.typographyPlayground',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+    },
+  },
+
+  CHECKBOX: {
+    name: 'checkbox',
+    component: props => (
+      <ScrollViewDefault>
+        <DefaultLayout>
+          <CheckboxPlayground {...props} />
+        </DefaultLayout>
+      </ScrollViewDefault>
+    ),
+    options: {
+      title: 'components.checkboxPlayground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}

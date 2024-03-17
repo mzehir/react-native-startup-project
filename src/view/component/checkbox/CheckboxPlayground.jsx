@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import styled from '@emotion/native';
 import ViewComp from '../../../components/core/View';
 import ObserveSection from './ObserveSection';
-import ReadyComponentsSection from './ReadyComponentsSection';
 import CustomizeSection from './CustomizeSection';
+import ReadyComponentsSection from './ReadyComponentsSection';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -16,9 +16,10 @@ const sectionPaperPadding = {
   paddingVertical: '15',
 };
 
-const TextPlayground = () => {
-  const [selectedSize, setSelectedSize] = useState('25');
+const CheckboxPlayground = () => {
+  const [selectedSize, setSelectedSize] = useState('small');
   const [selectedColor, setSelectedColor] = useState('success');
+  const [checked, setChecked] = useState(true);
 
   return (
     <Container>
@@ -26,24 +27,21 @@ const TextPlayground = () => {
         sectionPaperPadding={sectionPaperPadding}
         selectedSize={selectedSize}
         selectedColor={selectedColor}
+        checked={checked}
+        setChecked={setChecked}
       />
 
       <CustomizeSection
         sectionPaperPadding={sectionPaperPadding}
         selectedSize={selectedSize}
-        setSelectedSize={text => {
-          const regex = /^[0-9]+$/;
-
-          if (regex.test(text)) {
-            setSelectedSize(text);
-          }
-        }}
+        setSelectedSize={setSelectedSize}
         selectedColor={selectedColor}
         setSelectedColor={setSelectedColor}
       />
+
       <ReadyComponentsSection sectionPaperPadding={sectionPaperPadding} />
     </Container>
   );
 };
 
-export default TextPlayground;
+export default CheckboxPlayground;

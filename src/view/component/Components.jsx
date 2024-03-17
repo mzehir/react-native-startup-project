@@ -49,6 +49,11 @@ const ComponentsView = ({navigation}) => {
       name: COMPONENT_NAVIGATORS.TEXT.name,
     },
     {
+      title: 'Checkbox',
+      content: 'components.componentsViewCheckboxDesc',
+      name: COMPONENT_NAVIGATORS.CHECKBOX.name,
+    },
+    {
       title: 'Icon',
       content: 'components.componentsViewIconDesc',
       name: COMPONENT_NAVIGATORS.ICON.name,

@@ -36,7 +36,7 @@ const defaultVariant = {
     },
     standard: {
       color: '#000',
-      borderColor: '#D9DBDD',
+      borderColor: '#636465',
       background: '#F7F9FC',
       containedColor: 'transparent',
     },
@@ -125,7 +125,7 @@ const darkVariant = merge(defaultVariant, {
     },
     standard: {
       color: '#FFF',
-      borderColor: '#37404E',
+      borderColor: '#8D939A',
       background: '#1B2635',
       containedColor: 'transparent',
     },
