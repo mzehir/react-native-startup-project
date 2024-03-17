@@ -16,14 +16,14 @@ const Container = styled(ViewComp)`
 const ContentWrapper = styled(ViewComp)`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 `;
 
 const Row = styled(ViewComp)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 `;
 
 const ReadyComponentsSection = ({sectionPaperPadding}) => {
