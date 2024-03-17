@@ -5,6 +5,7 @@ import CustomTextComp from './CustomText';
 
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
+import {ICON_SIZES} from '../../utils/constant/app/iconSizeConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
 import {BUTTON_RADIUS} from '../../utils/constant/app/buttonRadiusConstant';
@@ -103,13 +104,7 @@ const CustomTouchableOpacityComp = ({
 
       {iconFields.component && (
         <iconFields.component
-          size={
-            size === SIZES.small.value
-              ? 15
-              : size === SIZES.medium.value
-              ? 21
-              : 27
-          }
+          size={ICON_SIZES[size].size}
           colorGroup={color}
           color={variant === 'contained' ? 'containedColor' : 'color'}
           name={iconFields.name}

@@ -24,7 +24,7 @@ const defaultVariant = {
           textColor: '#212121',
           placeholderColor: '#A4A4A4',
           borderColor: '#C4C4C4',
-          borderColorFocus: '#1976D2',
+          borderColorFocus: '#376FD0',
         },
         paper: {
           background: '#FFFFFF',
@@ -112,8 +112,8 @@ const darkVariant = merge(defaultVariant, {
           backgroundColor: '#233044',
           textColor: '#FFFFFF',
           placeholderColor: '#56606F',
-          borderColor: '#484C50',
-          borderColorFocus: '#90CAF9',
+          borderColor: '#56606F',
+          borderColorFocus: '#407AD6',
         },
         paper: {
           background: '#233044',
