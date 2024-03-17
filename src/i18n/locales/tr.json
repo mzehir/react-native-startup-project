@@ -19,11 +19,13 @@
     "typographyPlayground": "Typography - Oyun Alanı",
     "iconPlayground": "Icon - Oyun Alanı",
     "checkboxPlayground": "Checkbox - Oyun Alanı",
+    "textInputPlayground": "TextInput - Oyun Alanı",
     "goToDetail": "Detaya Git",
     "componentsViewButtonDesc": "Dilersen uygulamanın sunduğu buttonları inceleyebilir ve özelleştirebilirsin.",
     "componentsViewTypographyDesc": "Dilersen uygulamanın sunduğu tipografileri inceleyebilir ve özelleştirebilirsin.",
     "componentsViewIconDesc": "Dilersen uygulamanın sunduğu ikon özelliklerini inceleyebilir.",
     "componentsViewCheckboxDesc": "Dilersen uygulamanın sunduğu onay kutusu özelliklerini inceleyebilir.",
+    "componentsViewTextInputDesc": "Dilersen uygulamanın sunduğu 'metin girişi' özelliklerini inceleyebilir.",
     "observeComponent": "Bileşeni Gözlemle",
     "customizeComponent": "Bileşeni Özelleştir",
     "readyComponents": "Hazır Bileşenler",
@@ -34,6 +36,10 @@
     "selectRadius": "Yarıçap seç",
     "addIcon": "İkon ekle",
     "selectLocationForIcon": "İkon için konum seç",
+    "selectKeyboardType":"Klavye tipi seç",
+    "selectUsageType":"Kullanım türü seç",
+    "disableComponent":"Bileşeni devre dışı bırak",
+    "enterPlaceholder": "Yer tutucu gir",
     "zzz": "zzz"
   }
 }

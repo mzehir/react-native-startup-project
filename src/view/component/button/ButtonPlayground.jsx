@@ -4,6 +4,11 @@ import ViewComp from '../../../components/core/View';
 import ObserveSection from './ObserveSection';
 import CustomizeSection from './CustomizeSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
+import {BUTTON_RADIUS} from '../../../utils/constant/app/buttonRadiusConstant';
+import {BUTTON_VARIANTS} from '../../../utils/constant/app/buttonVariantConstant';
+import {ICON_POSITION} from '../../../utils/constant/app/iconSizeConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -17,12 +22,16 @@ const sectionPaperPadding = {
 };
 
 const ButtonPlayground = () => {
-  const [selectedSize, setSelectedSize] = useState('small');
-  const [selectedColor, setSelectedColor] = useState('success');
-  const [selectedVariant, setSelectedVariant] = useState('contained');
-  const [selectedRadius, setSelectedRadius] = useState('few');
-  const [selectedIconPosition, setSelectedIconPosition] = useState("left");
-  const [iconVisible, setIconVisible] = useState(true)
+  const [selectedSize, setSelectedSize] = useState(SIZES.small.value);
+  const [selectedColor, setSelectedColor] = useState(COLORS.SUCCESS.value);
+  const [selectedVariant, setSelectedVariant] = useState(
+    BUTTON_VARIANTS.CONTAINED.value,
+  );
+  const [selectedRadius, setSelectedRadius] = useState(BUTTON_RADIUS.FEW.value);
+  const [selectedIconPosition, setSelectedIconPosition] = useState(
+    ICON_POSITION.start.value,
+  );
+  const [iconVisible, setIconVisible] = useState(true);
   return (
     <Container>
       <ObserveSection
@@ -51,7 +60,7 @@ const ButtonPlayground = () => {
         setIconVisible={setIconVisible}
       />
 
-      <ReadyComponentsSection sectionPaperPadding={sectionPaperPadding}  />
+      <ReadyComponentsSection sectionPaperPadding={sectionPaperPadding} />
     </Container>
   );
 };

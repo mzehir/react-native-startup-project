@@ -13,6 +13,7 @@ import {
 import {getSizesConstantAsArray} from '../../../utils/constant/app/sizeConstant';
 import {getButtonVariantsConstantAsArray} from '../../../utils/constant/app/buttonVariantConstant';
 import {getButtonRadiusConstantAsArray} from '../../../utils/constant/app/buttonRadiusConstant';
+import {getIconPositionConstantAsArray} from '../../../utils/constant/app/iconSizeConstant';
 
 const RowContainer = styled(ViewComp)`
   display: flex;
@@ -38,10 +39,7 @@ const variantOptions = getButtonVariantsConstantAsArray();
 
 const radiusOptions = getButtonRadiusConstantAsArray();
 
-const iconPositionOptions = [
-  {label: 'Left', value: 'left'},
-  {label: 'Right', value: 'right'},
-];
+const iconPositionOptions = getIconPositionConstantAsArray();
 
 const CustomizeSection = ({
   sectionPaperPadding,

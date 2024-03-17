@@ -4,6 +4,7 @@ import ViewComp from '../../../components/core/View';
 import ObserveSection from './ObserveSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
 import CustomizeSection from './CustomizeSection';
+import { COLORS } from '../../../utils/constant/app/colorConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -18,7 +19,7 @@ const sectionPaperPadding = {
 
 const TextPlayground = () => {
   const [selectedSize, setSelectedSize] = useState('25');
-  const [selectedColor, setSelectedColor] = useState('success');
+  const [selectedColor, setSelectedColor] = useState(COLORS.SUCCESS.value);
 
   return (
     <Container>

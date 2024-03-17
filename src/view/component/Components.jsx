@@ -10,6 +10,7 @@ import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
+import { ICON_POSITION } from '../../utils/constant/app/iconSizeConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -44,9 +45,9 @@ const ItemButtonContainer = styled(ViewComp)`
 const ComponentsView = ({navigation}) => {
   const items = [
     {
-      title: 'Typography',
-      content: 'components.componentsViewTypographyDesc',
-      name: COMPONENT_NAVIGATORS.TEXT.name,
+      title: 'Icon',
+      content: 'components.componentsViewIconDesc',
+      name: COMPONENT_NAVIGATORS.ICON.name,
     },
     {
       title: 'Checkbox',
@@ -54,9 +55,14 @@ const ComponentsView = ({navigation}) => {
       name: COMPONENT_NAVIGATORS.CHECKBOX.name,
     },
     {
-      title: 'Icon',
-      content: 'components.componentsViewIconDesc',
-      name: COMPONENT_NAVIGATORS.ICON.name,
+      title: 'Typography',
+      content: 'components.componentsViewTypographyDesc',
+      name: COMPONENT_NAVIGATORS.TEXT.name,
+    },
+    {
+      title: 'Text-Input',
+      content: 'components.componentsViewTextInputDesc',
+      name: COMPONENT_NAVIGATORS.TEXT_INPUT.name,
     },
     {
       title: 'Button',
@@ -112,7 +118,7 @@ const Item = ({navigation, title, content, name}) => {
             iconFields={{
               component: MaterialIconsDefaultComp,
               name: 'arrow-forward',
-              position: 'right',
+              position: ICON_POSITION.end.value,
             }}
             onPress={() => navigation.navigate(name)}>
             components.goToDetail

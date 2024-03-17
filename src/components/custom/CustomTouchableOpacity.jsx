@@ -5,7 +5,10 @@ import CustomTextComp from './CustomText';
 
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
-import {ICON_SIZES} from '../../utils/constant/app/iconSizeConstant';
+import {
+  ICON_POSITION,
+  ICON_SIZES,
+} from '../../utils/constant/app/iconSizeConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
 import {BUTTON_RADIUS} from '../../utils/constant/app/buttonRadiusConstant';
@@ -13,7 +16,7 @@ import {COLOR_TYPE} from '../../utils/constant/app/colorTypeConstant';
 
 const StyledTouchableOpacityComp = styled(TouchableOpacityComp)`
   flex-direction: ${({iconFields}) =>
-    iconFields?.position === 'right' ? 'row' : 'row-reverse'};
+    iconFields?.position === ICON_POSITION.end.value ? 'row' : 'row-reverse'};
 
   justify-content: center;
 
@@ -106,7 +109,11 @@ const CustomTouchableOpacityComp = ({
         <iconFields.component
           size={ICON_SIZES[size].size}
           colorGroup={color}
-          color={variant === 'contained' ? 'containedColor' : 'color'}
+          color={
+            variant === BUTTON_VARIANTS.CONTAINED.value
+              ? COLOR_TYPE.CONTAINED_COLOR.value
+              : COLOR_TYPE.COLOR.value
+          }
           name={iconFields.name}
         />
       )}

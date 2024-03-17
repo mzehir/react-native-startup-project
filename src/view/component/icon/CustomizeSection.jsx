@@ -6,6 +6,7 @@ import CustomTextComp from '../../../components/custom/CustomText';
 import CustomTextInput from '../../../components/custom/CustomTextInput';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
+import {KEYBOARD_TYPES} from '../../../utils/constant/app/textInputConstants';
 import {
   COLORS,
   getColorsConstantAsArray,
@@ -55,7 +56,7 @@ const CustomizeSection = ({
             <CustomTextInput
               text={selectedSize}
               setText={setSelectedSize}
-              keyboardType="numeric"
+              keyboardType={KEYBOARD_TYPES.numeric.value}
             />
           </RightColumn>
         </RowContainer>

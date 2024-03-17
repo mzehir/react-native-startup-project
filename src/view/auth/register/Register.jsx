@@ -5,6 +5,7 @@ import ViewComp from '../../../components/core/View';
 import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 import {AUTH_NAVIGATORS} from '../../../utils/constant/navigatorAuthConstant';
+import { ICON_POSITION } from '../../../utils/constant/app/iconSizeConstant';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -24,7 +25,7 @@ const RegisterView = () => {
         iconFields={{
           component: MaterialIconsDefaultComp,
           name: 'arrow-forward',
-          position: 'right',
+          position: ICON_POSITION.end.value,
         }}
         onPress={() =>
           navigation.navigate(AUTH_NAVIGATORS.HOME_NAVIGATOR.name)

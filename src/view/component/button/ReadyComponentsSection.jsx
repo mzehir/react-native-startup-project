@@ -10,6 +10,7 @@ import {COLORS} from '../../../utils/constant/app/colorConstant';
 import {BUTTON_VARIANTS} from '../../../utils/constant/app/buttonVariantConstant';
 import {BUTTON_RADIUS} from '../../../utils/constant/app/buttonRadiusConstant';
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
+import {ICON_POSITION} from '../../../utils/constant/app/iconSizeConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -51,7 +52,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 1
             </CustomTouchableOpacityComp>
@@ -64,7 +65,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 2
             </CustomTouchableOpacityComp>
@@ -77,7 +78,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 3
             </CustomTouchableOpacityComp>
@@ -90,7 +91,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 4
             </CustomTouchableOpacityComp>
@@ -103,7 +104,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 5
             </CustomTouchableOpacityComp>
@@ -116,7 +117,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 6
             </CustomTouchableOpacityComp>
@@ -231,7 +232,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 1
             </CustomTouchableOpacityComp>
@@ -244,7 +245,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 2
             </CustomTouchableOpacityComp>
@@ -257,7 +258,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 3
             </CustomTouchableOpacityComp>
@@ -270,7 +271,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 4
             </CustomTouchableOpacityComp>
@@ -283,7 +284,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 5
             </CustomTouchableOpacityComp>
@@ -296,7 +297,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
               iconFields={{
                 component: MaterialIconsDefaultComp,
                 name: 'arrow-forward',
-                position: 'right',
+                position: ICON_POSITION.end.value,
               }}>
               Button 6
             </CustomTouchableOpacityComp>

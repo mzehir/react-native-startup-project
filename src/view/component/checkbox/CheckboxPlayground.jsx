@@ -4,6 +4,8 @@ import ViewComp from '../../../components/core/View';
 import ObserveSection from './ObserveSection';
 import CustomizeSection from './CustomizeSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -17,8 +19,8 @@ const sectionPaperPadding = {
 };
 
 const CheckboxPlayground = () => {
-  const [selectedSize, setSelectedSize] = useState('small');
-  const [selectedColor, setSelectedColor] = useState('success');
+  const [selectedSize, setSelectedSize] = useState(SIZES.small.value);
+  const [selectedColor, setSelectedColor] = useState(COLORS.SUCCESS.value);
   const [checked, setChecked] = useState(true);
 
   return (

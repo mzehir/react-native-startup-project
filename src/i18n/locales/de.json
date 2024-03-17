@@ -19,11 +19,13 @@
     "typographyPlayground": "Typography - Spielplatz",
     "iconPlayground": "Icon - Spielplatz",
     "checkboxPlayground": "Checkbox - Spielplatz",
+    "textInputPlayground": "TextInput - Spielplatz",
     "goToDetail": "Zu den Details",
     "componentsViewButtonDesc": "Wenn Sie möchten, können Sie die von der Anwendung angebotenen Schaltflächen untersuchen und anpassen.",
     "componentsViewTypographyDesc": "Wenn Sie möchten, können Sie die von der App angebotenen Typografien überprüfen und anpassen.",
     "componentsViewIconDesc": "Wenn Sie möchten, können Sie die von der App angebotenen Icon-Funktionen prüfen.",
     "componentsViewCheckboxDesc": "Wenn Sie möchten, können Sie die von der App angebotenen ankreuzfeld prüfen.",
+    "componentsViewTextInputDesc": "Wenn Sie möchten, können Sie die von der App angebotenen texteingabefeld prüfen.",
     "observeComponent": "Komponente beobachten",
     "customizeComponent": "Komponente anpassen",
     "readyComponents": "Fertige Komponenten",
@@ -34,6 +36,10 @@
     "selectRadius": "Radius auswählen",
     "addIcon": "Symbol hinzufügen",
     "selectLocationForIcon": "Ort für das Symbol auswählen",
+    "selectKeyboardType":"Tastaturtyp auswählen",
+    "selectUsageType":"Nutzungsart wählen",
+    "disableComponent":"Komponente deaktivieren",
+    "enterPlaceholder": "Platzhalter eingeben",
     "zzz": "zzz"
   }
 }

@@ -4,6 +4,9 @@ import ViewComp from '../../../components/core/View';
 import ObserveSection from './ObserveSection';
 import CustomizeSection from './CustomizeSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
+import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -17,9 +20,11 @@ const sectionPaperPadding = {
 };
 
 const TextPlayground = () => {
-  const [selectedSize, setSelectedSize] = useState('large');
-  const [selectedColor, setSelectedColor] = useState('success');
-  const [selectedVariant, setSelectedVariant] = useState('title');
+  const [selectedSize, setSelectedSize] = useState(SIZES.large.value);
+  const [selectedColor, setSelectedColor] = useState(COLORS.SUCCESS.value);
+  const [selectedVariant, setSelectedVariant] = useState(
+    TEXT_VARIANTS.TITLE.value,
+  );
   return (
     <Container>
       <ObserveSection

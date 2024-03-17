@@ -1,11 +1,11 @@
 import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
-import ButtonPlayground from '../../view/component/button/ButtonPlayground';
-import TextPlayground from '../../view/component/text/TextPlayground';
 import IconPlayground from '../../view/component/icon/IconPlayground';
 import CheckboxPlayground from '../../view/component/checkbox/CheckboxPlayground';
-
+import TextPlayground from '../../view/component/text/TextPlayground';
+import TextInputPlayground from '../../view/component/textInput/TextInputPlayground';
+import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 import CustomTextComp from '../../components/custom/CustomText';
 import {TEXT_VARIANTS} from './app/textVariantConstant';
 import {SIZES} from './app/sizeConstant';
@@ -37,17 +37,17 @@ export const COMPONENT_NAVIGATORS = {
     initialRouteName: true,
   },
 
-  TEXT: {
-    name: 'text',
+  ICON: {
+    name: 'icon',
     component: props => (
       <ScrollViewDefault>
         <DefaultLayout>
-          <TextPlayground {...props} />
+          <IconPlayground {...props} />
         </DefaultLayout>
       </ScrollViewDefault>
     ),
     options: {
-      title: 'components.typographyPlayground',
+      title: 'components.iconPlayground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
@@ -79,17 +79,38 @@ export const COMPONENT_NAVIGATORS = {
     },
   },
 
-  ICON: {
-    name: 'icon',
+  TEXT: {
+    name: 'text',
     component: props => (
       <ScrollViewDefault>
         <DefaultLayout>
-          <IconPlayground {...props} />
+          <TextPlayground {...props} />
         </DefaultLayout>
       </ScrollViewDefault>
     ),
     options: {
-      title: 'components.iconPlayground',
+      title: 'components.typographyPlayground',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+    },
+  },
+
+  TEXT_INPUT: {
+    name: 'text-input',
+    component: props => (
+      <ScrollViewDefault>
+        <DefaultLayout>
+          <TextInputPlayground {...props} />
+        </DefaultLayout>
+      </ScrollViewDefault>
+    ),
+    options: {
+      title: 'components.textInputPlayground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}

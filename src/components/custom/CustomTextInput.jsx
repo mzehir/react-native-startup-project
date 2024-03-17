@@ -8,15 +8,17 @@ import TextInputComp from '../core/TextInput';
 import {MaterialCommunityIconsDefaultComp} from './Icons';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
-import {ICON_SIZES} from '../../utils/constant/app/iconSizeConstant';
-
-const keyboardTypes = ['default', 'numeric'];
-const typesOfUse = ['default', 'password', 'search'];
-const defColor = COLORS.STANDARD.value;
-const defSize = SIZES.small.value;
-const defPlaceholder = 'common.enterText';
+import {
+  ICON_POSITION,
+  ICON_SIZES,
+} from '../../utils/constant/app/iconSizeConstant';
+import {
+  KEYBOARD_TYPES,
+  TYPES_OF_USE,
+} from '../../utils/constant/app/textInputConstants';
 
 const Container = styled(ViewComp)`
+  width: 100%;
   flex-direction: row;
   align-items: center;
   border-width: 1px;
@@ -59,14 +61,15 @@ const StyledTextInput = styled(TextInputComp)`
 `;
 
 const CustomTextInput = ({
-  keyboardType = keyboardTypes[1],
-  typeOfUse = typesOfUse[0],
-  color = defColor,
-  size = defSize,
-  placeholder = defPlaceholder,
+  keyboardType = KEYBOARD_TYPES.default.value,
+  typeOfUse = TYPES_OF_USE.default.value,
+  size = SIZES.small.value,
+  color = COLORS.STANDARD.value,
+  placeholder = 'common.enterText',
   iconFields,
   isTranslation = true,
   disabled = false,
+  focus = false,
   text,
   setText,
 }) => {
@@ -75,13 +78,13 @@ const CustomTextInput = ({
   const iconSize = ICON_SIZES[size].size;
 
   const [showPassword, setShowPassword] = useState(false);
-  const [isFocused, setIsFocused] = useState(false);
+  const [isFocused, setIsFocused] = useState(focus);
 
   return (
     <Container isFocus={isFocused} color={color} size={size}>
-      {typeOfUse === typesOfUse[0] &&
+      {typeOfUse === TYPES_OF_USE.default.value &&
         iconFields?.component &&
-        iconFields?.position == 'start' && (
+        iconFields?.position == ICON_POSITION.start.value && (
           <iconFields.component
             style={{marginRight: 3}}
             name={iconFields.name}
@@ -102,11 +105,13 @@ const CustomTextInput = ({
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         onChangeText={setText}
-        secureTextEntry={typeOfUse === typesOfUse[1] && !showPassword}
+        secureTextEntry={
+          typeOfUse === TYPES_OF_USE.password.value && !showPassword
+        }
         editable={!disabled}
       />
 
-      {typeOfUse === typesOfUse[2] && text !== '' && (
+      {typeOfUse === TYPES_OF_USE.search.value && text !== '' && (
         <TouchableOpacity onPress={() => setText('')}>
           <MaterialCommunityIconsDefaultComp
             style={{marginLeft: 3}}
@@ -116,7 +121,7 @@ const CustomTextInput = ({
         </TouchableOpacity>
       )}
 
-      {typeOfUse === typesOfUse[1] && (
+      {typeOfUse === TYPES_OF_USE.password.value && (
         <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
           <MaterialCommunityIconsDefaultComp
             style={{marginLeft: 3}}
@@ -126,9 +131,9 @@ const CustomTextInput = ({
         </TouchableOpacity>
       )}
 
-      {typeOfUse === typesOfUse[0] &&
+      {typeOfUse === TYPES_OF_USE.default.value &&
         iconFields?.component &&
-        iconFields?.position == 'end' && (
+        iconFields?.position == ICON_POSITION.end.value && (
           <iconFields.component
             style={{marginLeft: 3}}
             name={iconFields.name}

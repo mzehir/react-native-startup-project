@@ -19,11 +19,13 @@
     "typographyPlayground": "Typography - Playground",
     "iconPlayground": "Icon - Playground",
     "checkboxPlayground": "Checkbox - Playground",
+    "textInputPlayground": "TextInput - Playground",
     "goToDetail": "Go to Detail",
     "componentsViewButtonDesc": "If you wish, you can examine and customize the buttons offered by the application.",
     "componentsViewTypographyDesc": "If you wish, you can review and customize the typographies offered by the app.",
     "componentsViewIconDesc": "If you wish, you can examine the icon features offered by the app.",
     "componentsViewCheckboxDesc": "If you wish, you can examine the checkbox features offered by the app.",
+    "componentsViewTextInputDesc": "If you wish, you can examine the 'text input' features offered by the app.",
     "observeComponent": "Observe Component",
     "customizeComponent": "Customize Component",
     "readyComponents": "Ready Components",
@@ -34,6 +36,10 @@
     "selectRadius": "Select radius",
     "addIcon": "Add icon",
     "selectLocationForIcon": "Select location for icon",
+    "selectKeyboardType":"Select keyboard type",
+    "selectUsageType":"Select usage type",
+    "disableComponent":"Disable component",
+    "enterPlaceholder": "Enter placeholder",
     "zzz": "zzz"
   }
 }
