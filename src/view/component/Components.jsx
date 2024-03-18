@@ -12,7 +12,7 @@ import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
-import { ICON_POSITION } from '../../utils/constant/app/iconSizeConstant';
+import {ICON_POSITION} from '../../utils/constant/app/iconSizeConstant';
 
 const Container = styled(ViewComp)`
   display: flex;
@@ -55,6 +55,11 @@ const ComponentsView = ({navigation}) => {
       title: 'Checkbox',
       content: 'components.componentsViewCheckboxDesc',
       name: COMPONENT_NAVIGATORS.CHECKBOX.name,
+    },
+    {
+      title: 'Radio-Button',
+      content: 'components.componentsViewRadioButtonDesc',
+      name: COMPONENT_NAVIGATORS.RADIO_BUTTON.name,
     },
     {
       title: 'Typography',

@@ -2,6 +2,7 @@ import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
 import IconPlayground from '../../view/component/icon/IconPlayground';
 import CheckboxPlayground from '../../view/component/checkbox/CheckboxPlayground';
+import RadioPlayground from '../../view/component/radio/RadioPlayground';
 import TextPlayground from '../../view/component/text/TextPlayground';
 import TextInputPlayground from '../../view/component/textInput/TextInputPlayground';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
@@ -71,6 +72,27 @@ export const COMPONENT_NAVIGATORS = {
     ),
     options: {
       title: 'components.checkboxPlayground',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+    },
+  },
+
+  RADIO_BUTTON: {
+    name: 'radio-button',
+    component: props => (
+      <ScrollViewDefault>
+        <DefaultLayout>
+          <RadioPlayground {...props} />
+        </DefaultLayout>
+      </ScrollViewDefault>
+    ),
+    options: {
+      title: 'components.radioButtonPlayground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
