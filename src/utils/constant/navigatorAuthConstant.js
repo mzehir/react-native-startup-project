@@ -1,5 +1,5 @@
 import AuthLayout from '../../layout/AuthLayout';
-import GuestAuthView from '../../view/auth/register/GuestAuth';
+import GuestAuthView from '../../view/auth/guest/GuestAuth';
 import HomeNavigator from '../../navigators/custom/HomeNavigator';
 //* components
 import CustomTextComp from '../../components/custom/CustomText';
