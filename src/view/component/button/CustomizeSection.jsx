@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/native';
 //* components
-import PaperComp from '../../../components/custom/Paper';
+import CustomPaperComp from '../../../components/custom/CustomPaper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
@@ -59,7 +59,7 @@ const CustomizeSection = ({
   setIconVisible,
 }) => {
   return (
-    <PaperComp {...sectionPaperPadding}>
+    <CustomPaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
         <CustomTextComp
           style={{textAlign: 'center'}}
@@ -180,7 +180,7 @@ const CustomizeSection = ({
           </RowContainer>
         )}
       </ViewComp>
-    </PaperComp>
+    </CustomPaperComp>
   );
 };
 

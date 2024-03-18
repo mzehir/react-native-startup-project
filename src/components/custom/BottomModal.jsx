@@ -5,10 +5,11 @@ import ModalComp from '../core/Modal';
 import ViewComp from '../core/View';
 import CustomTextComp from './CustomText';
 import TouchableOpacityComp from '../core/TouchableOpacity';
-import { MaterialCommunityIconsDefaultComp } from './Icons';
+import {MaterialCommunityIconsDefaultComp} from './Icons';
 //* utils
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
+import {ICON_SIZES} from '../../utils/constant/app/iconSizeConstant';
 
 const Container = styled(ViewComp)`
   flex: 1;
@@ -88,10 +89,9 @@ const BottomModalComp = props => {
             </CustomTextComp>
 
             <CloseButton onPress={() => setVisible(false)}>
-              {/* <CloseSvg /> */}
               <MaterialCommunityIconsDefaultComp
                 name="close-box"
-                size={20}
+                size={ICON_SIZES.medium.size}
               />
             </CloseButton>
           </TitleWrapper>

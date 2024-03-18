@@ -7,7 +7,7 @@ import TextPlayground from '../../view/component/text/TextPlayground';
 import TextInputPlayground from '../../view/component/textInput/TextInputPlayground';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 //* components
-import {ScrollViewDefault} from '../../components/custom/ScrollViews';
+import {CustomScrollViewDefaultComp} from '../../components/custom/CustomScrollViews';
 import CustomTextComp from '../../components/custom/CustomText';
 //* utils
 import {TEXT_VARIANTS} from './app/textVariantConstant';
@@ -17,11 +17,11 @@ export const COMPONENT_NAVIGATORS = {
   COMPONENTS: {
     name: 'components',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <ComponentsView {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'Components',
@@ -43,11 +43,11 @@ export const COMPONENT_NAVIGATORS = {
   ICON: {
     name: 'icon',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <IconPlayground {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'components.iconPlayground',
@@ -64,11 +64,11 @@ export const COMPONENT_NAVIGATORS = {
   CHECKBOX: {
     name: 'checkbox',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <CheckboxPlayground {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'components.checkboxPlayground',
@@ -85,11 +85,11 @@ export const COMPONENT_NAVIGATORS = {
   RADIO_BUTTON: {
     name: 'radio-button',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <RadioPlayground {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'components.radioButtonPlayground',
@@ -106,11 +106,11 @@ export const COMPONENT_NAVIGATORS = {
   TEXT: {
     name: 'text',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <TextPlayground {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'components.typographyPlayground',
@@ -127,11 +127,11 @@ export const COMPONENT_NAVIGATORS = {
   TEXT_INPUT: {
     name: 'text-input',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <TextInputPlayground {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'components.textInputPlayground',
@@ -148,11 +148,11 @@ export const COMPONENT_NAVIGATORS = {
   BUTTON: {
     name: 'button',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <ButtonPlayground {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'components.buttonPlayground',

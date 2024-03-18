@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/native';
 //* components
 import ViewComp from '../../components/core/View';
-import PaperComp from '../../components/custom/Paper';
+import CustomPaperComp from '../../components/custom/CustomPaper';
 import CustomButtonComp from '../../components/custom/CustomButton';
 import CustomTextComp from '../../components/custom/CustomText';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
@@ -80,14 +80,14 @@ const ComponentsView = ({navigation}) => {
   return (
     <Container>
       {items.map((item, index) => (
-        <PaperComp key={index.toString()}>
+        <CustomPaperComp key={index.toString()}>
           <Item
             navigation={navigation}
             title={item.title}
             content={item.content}
             name={item.name}
           />
-        </PaperComp>
+        </CustomPaperComp>
       ))}
     </Container>
   );

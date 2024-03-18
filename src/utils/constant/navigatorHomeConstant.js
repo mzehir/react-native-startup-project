@@ -2,7 +2,7 @@ import DefaultLayout from '../../layout/DefaultLayout';
 import HomeView from '../../view/home/home/Home';
 import ComponentNavigator from '../../navigators/custom/ComponentNavigator';
 //* components
-import {ScrollViewDefault} from '../../components/custom/ScrollViews';
+import {CustomScrollViewDefaultComp} from '../../components/custom/CustomScrollViews';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import CustomTextComp from '../../components/custom/CustomText';
 //* utils
@@ -13,11 +13,11 @@ export const HOME_NAVIGATORS = {
   HOME: {
     name: 'home',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <DefaultLayout>
           <HomeView {...props} />
         </DefaultLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'Home',

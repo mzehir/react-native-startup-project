@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 //* components
-import PaperComp from '../../../components/custom/Paper';
+import CustomPaperComp from '../../../components/custom/CustomPaper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import CustomRadioButton from '../../../components/custom/CustomRadioButton';
@@ -11,7 +11,7 @@ import {COLORS} from '../../../utils/constant/app/colorConstant';
 const ObserveSection = ({sectionPaperPadding, selectedSize, selectedColor}) => {
   const [radioSelected, setRadioSelected] = useState(false);
   return (
-    <PaperComp {...sectionPaperPadding}>
+    <CustomPaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
         <CustomTextComp
           style={{textAlign: 'center'}}
@@ -29,7 +29,7 @@ const ObserveSection = ({sectionPaperPadding, selectedSize, selectedColor}) => {
           }}
         />
       </ViewComp>
-    </PaperComp>
+    </CustomPaperComp>
   );
 };
 

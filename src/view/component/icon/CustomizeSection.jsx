@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/native';
 //* components
-import PaperComp from '../../../components/custom/Paper';
+import CustomPaperComp from '../../../components/custom/CustomPaper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import CustomTextInput from '../../../components/custom/CustomTextInput';
@@ -40,7 +40,7 @@ const CustomizeSection = ({
   setSelectedColor,
 }) => {
   return (
-    <PaperComp {...sectionPaperPadding}>
+    <CustomPaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
         <CustomTextComp
           style={{textAlign: 'center'}}
@@ -82,7 +82,7 @@ const CustomizeSection = ({
           </RightColumn>
         </RowContainer>
       </ViewComp>
-    </PaperComp>
+    </CustomPaperComp>
   );
 };
 

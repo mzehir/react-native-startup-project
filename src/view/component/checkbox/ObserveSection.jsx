@@ -1,6 +1,6 @@
 import React from 'react';
 //* components
-import PaperComp from '../../../components/custom/Paper';
+import CustomPaperComp from '../../../components/custom/CustomPaper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import CustomCheckboxComp from '../../../components/custom/CustomCheckbox';
@@ -16,7 +16,7 @@ const ObserveSection = ({
   setChecked,
 }) => {
   return (
-    <PaperComp {...sectionPaperPadding}>
+    <CustomPaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
         <CustomTextComp
           style={{textAlign: 'center'}}
@@ -34,7 +34,7 @@ const ObserveSection = ({
           }}
         />
       </ViewComp>
-    </PaperComp>
+    </CustomPaperComp>
   );
 };
 

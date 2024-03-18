@@ -1,6 +1,6 @@
 import React from 'react';
 //* components
-import PaperComp from '../../../components/custom/Paper';
+import CustomPaperComp from '../../../components/custom/CustomPaper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
@@ -15,7 +15,7 @@ const ObserveSection = ({
   color = 'color',
 }) => {
   return (
-    <PaperComp {...sectionPaperPadding}>
+    <CustomPaperComp {...sectionPaperPadding}>
       <ViewComp style={{display: 'flex', flexDirection: 'column', gap: 15}}>
         <CustomTextComp
           style={{textAlign: 'center'}}
@@ -31,7 +31,7 @@ const ObserveSection = ({
           color={color}
         />
       </ViewComp>
-    </PaperComp>
+    </CustomPaperComp>
   );
 };
 

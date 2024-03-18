@@ -5,7 +5,7 @@ import ScrollViewComp from '../core/ScrollView';
 
 const StyledScrollViewDefault = styled(ScrollViewComp)``;
 
-export const ScrollViewDefault = props => {
+export const CustomScrollViewDefaultComp = props => {
   const {children, ...other} = props;
   return (
     <StyledScrollViewDefault {...other}>{children}</StyledScrollViewDefault>

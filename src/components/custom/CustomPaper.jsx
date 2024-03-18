@@ -25,7 +25,7 @@ const Container = styled(ViewComp)`
   transition-timing-function: 'cubic-bezier(0.4, 0, 0.2, 1)';
 `;
 
-const PaperComp = props => {
+const CustomPaperComp = props => {
   const {children} = props;
 
   return (
@@ -37,4 +37,4 @@ const PaperComp = props => {
   );
 };
 
-export default PaperComp;
+export default CustomPaperComp;

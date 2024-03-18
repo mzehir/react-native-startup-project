@@ -3,7 +3,7 @@ import GuestAuthView from '../../view/auth/guest/GuestAuth';
 import HomeNavigator from '../../navigators/custom/HomeNavigator';
 //* components
 import CustomTextComp from '../../components/custom/CustomText';
-import {ScrollViewDefault} from '../../components/custom/ScrollViews';
+import {CustomScrollViewDefaultComp} from '../../components/custom/CustomScrollViews';
 //* utils
 import {TEXT_VARIANTS} from './app/textVariantConstant';
 import {SIZES} from './app/sizeConstant';
@@ -12,11 +12,11 @@ export const AUTH_NAVIGATORS = {
   GUEST_AUTH: {
     name: 'guest-auth',
     component: props => (
-      <ScrollViewDefault>
+      <CustomScrollViewDefaultComp>
         <AuthLayout>
           <GuestAuthView {...props} />
         </AuthLayout>
-      </ScrollViewDefault>
+      </CustomScrollViewDefaultComp>
     ),
     options: {
       title: 'Guest Screen',

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/native';
 //* components
-import PaperComp from '../../../components/custom/Paper';
+import CustomPaperComp from '../../../components/custom/CustomPaper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 //* utils
@@ -30,7 +30,7 @@ const Row = styled(ViewComp)`
 
 const ReadyComponentsSection = ({sectionPaperPadding}) => {
   return (
-    <PaperComp {...sectionPaperPadding}>
+    <CustomPaperComp {...sectionPaperPadding}>
       <Container>
         <CustomTextComp
           style={{textAlign: 'center'}}
@@ -284,7 +284,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
           </Row>
         </ContentWrapper>
       </Container>
-    </PaperComp>
+    </CustomPaperComp>
   );
 };
 
