@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
 import CustomCheckboxComp from '../../../components/custom/CustomCheckbox';
+//* utils
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
-import {
-  COLORS,
-  getColorsConstantAsArray,
-} from '../../../utils/constant/app/colorConstant';
 import {getSizesConstantAsArray} from '../../../utils/constant/app/sizeConstant';
 import {getButtonVariantsConstantAsArray} from '../../../utils/constant/app/buttonVariantConstant';
 import {getButtonRadiusConstantAsArray} from '../../../utils/constant/app/buttonRadiusConstant';
 import {getIconPositionConstantAsArray} from '../../../utils/constant/app/iconSizeConstant';
+import {
+  COLORS,
+  getColorsConstantAsArray,
+} from '../../../utils/constant/app/colorConstant';
 
 const RowContainer = styled(ViewComp)`
   display: flex;

@@ -1,6 +1,8 @@
 import React, {useState, createContext, useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
+//* sections
 import i18n from '../i18n/i18n';
+//* utils
 import {LANGUAGES} from '../utils/constant/languageConstant';
 import {
   languageGetItem,

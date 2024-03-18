@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import CustomTextInput from '../../../components/custom/CustomTextInput';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
+//* utils
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 import {KEYBOARD_TYPES} from '../../../utils/constant/app/textInputConstants';
 import {

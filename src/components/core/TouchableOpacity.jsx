@@ -3,6 +3,7 @@ import {TouchableOpacity} from 'react-native';
 
 const TouchableOpacityComp = props => {
   const {children, ...other} = props;
+
   return <TouchableOpacity {...other}>{children}</TouchableOpacity>;
 };
 

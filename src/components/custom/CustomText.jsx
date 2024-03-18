@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import TextComp from '../core/Text';
+//* utils
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
@@ -29,7 +31,7 @@ const CustomTextComp = ({
   size = SIZES.large.value,
   colorType = COLOR_TYPE.COLOR.value,
   color = COLORS.STANDARD.value,
-  isTranslate = false,
+  isTranslate,
   children,
   ...props
 }) => {
@@ -39,6 +41,7 @@ const CustomTextComp = ({
       size={size}
       colorType={colorType}
       color={color}
+      isTranslate={isTranslate}
       {...props}>
       {children}
     </StyledTextComp>

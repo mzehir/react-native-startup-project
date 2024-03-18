@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import ViewComp from '../components/core/View';
 
 const StyledAuthLayout = styled(ViewComp)`

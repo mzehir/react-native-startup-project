@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import ViewComp from '../../components/core/View';
 import PaperComp from '../../components/custom/Paper';
 import CustomTouchableOpacityComp from '../../components/custom/CustomTouchableOpacity';
-import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import CustomTextComp from '../../components/custom/CustomText';
+import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
+//* utils
 import {COMPONENT_NAVIGATORS} from '../../utils/constant/navigatorComponentConstant';
 import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';

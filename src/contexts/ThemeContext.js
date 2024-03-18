@@ -1,7 +1,9 @@
 import React, {useState, createContext, useEffect} from 'react';
 import {ThemeProvider as EmotionThemeProvider} from '@emotion/react';
 import {Appearance} from 'react-native';
+//* sections
 import createTheme from '../theme';
+//* utils
 import {THEMES} from '../utils/constant/themeConstant';
 import {themeGetItem, themeSetItem} from '../utils/helper/storageOperations';
 

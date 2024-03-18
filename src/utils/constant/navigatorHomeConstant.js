@@ -1,9 +1,11 @@
-import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import HomeView from '../../view/home/home/Home';
 import ComponentNavigator from '../../navigators/custom/ComponentNavigator';
+//* components
+import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import CustomTextComp from '../../components/custom/CustomText';
+//* utils
 import {TEXT_VARIANTS} from './app/textVariantConstant';
 import {SIZES} from './app/sizeConstant';
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 import CustomTextInput from '../../../components/custom/CustomTextInput';
+//* utils
 import {SIZES} from '../../../utils/constant/app/sizeConstant';
 import {COLORS} from '../../../utils/constant/app/colorConstant';
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';

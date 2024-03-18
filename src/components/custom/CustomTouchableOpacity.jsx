@@ -1,18 +1,19 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import TouchableOpacityComp from '../core/TouchableOpacity';
 import CustomTextComp from './CustomText';
-
+//* utils
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
-import {
-  ICON_POSITION,
-  ICON_SIZES,
-} from '../../utils/constant/app/iconSizeConstant';
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {BUTTON_VARIANTS} from '../../utils/constant/app/buttonVariantConstant';
 import {BUTTON_RADIUS} from '../../utils/constant/app/buttonRadiusConstant';
 import {COLOR_TYPE} from '../../utils/constant/app/colorTypeConstant';
+import {
+  ICON_POSITION,
+  ICON_SIZES,
+} from '../../utils/constant/app/iconSizeConstant';
 
 const StyledTouchableOpacityComp = styled(TouchableOpacityComp)`
   flex-direction: ${({iconFields}) =>

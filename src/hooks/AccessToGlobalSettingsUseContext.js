@@ -1,4 +1,5 @@
 import {useContext} from 'react';
+//* sections
 import {AccessToGlobalSettingsContext} from '../contexts/AccessToGlobalSettingsContext';
 
 const AccessToGlobalSettingsUseContext = () =>

@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import TouchableOpacityComp from '../core/TouchableOpacity';
 import ViewComp from '../core/View';
 import {MaterialIconsDefaultComp} from './Icons';
+//* utils
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
 

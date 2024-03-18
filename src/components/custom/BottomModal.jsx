@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import ModalComp from '../core/Modal';
 import ViewComp from '../core/View';
 import CustomTextComp from './CustomText';
 import TouchableOpacityComp from '../core/TouchableOpacity';
 import { MaterialCommunityIconsDefaultComp } from './Icons';
+//* utils
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
 

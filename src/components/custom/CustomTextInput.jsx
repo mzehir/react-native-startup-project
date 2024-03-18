@@ -3,9 +3,11 @@ import styled from '@emotion/native';
 import {useTheme} from '@emotion/react';
 import {TouchableOpacity} from 'react-native';
 import LanguageUseContext from '../../hooks/LanguageUseContext';
+//* components
 import ViewComp from '../core/View';
 import TextInputComp from '../core/TextInput';
 import {MaterialCommunityIconsDefaultComp} from './Icons';
+//* utils
 import {COLORS} from '../../utils/constant/app/colorConstant';
 import {SIZES} from '../../utils/constant/app/sizeConstant';
 import {

@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
 import styled from '@emotion/native';
+//* components
 import ViewComp from '../../core/View';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
 import CustomTextComp from '../CustomText';
 import BottomModalComp from '../BottomModal';
-import LanguageSelector from './LanguageSelector';
-import ThemeSelector from './ThemeSelector';
 import {
   MaterialCommunityIconsDefaultComp,
   MaterialIconsDefaultComp,
 } from '../Icons';
+//* sections
+import LanguageSelector from './LanguageSelector';
+import ThemeSelector from './ThemeSelector';
 
 const LanguageSelectorModal = ({visible, setVisible}) => {
   return (

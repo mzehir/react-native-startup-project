@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
 import CustomTextInput from '../../../components/custom/CustomTextInput';
 import CustomCheckboxComp from '../../../components/custom/CustomCheckbox';
+//* utils
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 import {getSizesConstantAsArray} from '../../../utils/constant/app/sizeConstant';
 import {getIconPositionConstantAsArray} from '../../../utils/constant/app/iconSizeConstant';

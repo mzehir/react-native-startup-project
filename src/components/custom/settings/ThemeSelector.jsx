@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from '@emotion/native';
 import ThemeUseContext from '../../../hooks/ThemeUseContext';
+//* components
 import TouchableOpacityComp from '../../core/TouchableOpacity';
 import ViewComp from '../../core/View';
 import CustomTextComp from '../CustomText';
-import {getThemesConstantAsArray} from '../../../utils/constant/themeConstant';
 import {MaterialIconsDefaultComp} from '../Icons';
+//* utils
+import {getThemesConstantAsArray} from '../../../utils/constant/themeConstant';
 
 const Container = styled(ViewComp)`
   flex-direction: column;

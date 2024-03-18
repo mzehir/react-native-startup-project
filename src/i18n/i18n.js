@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-
+//* sections
 import tr from './locales/tr.json';
 import en from './locales/en.json';
 import de from './locales/de.json';

@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import ReactNativeElementDropdown from '../../../components/core/reactNativeElementDropdown/ReactNativeElementDropdown';
+//* utils
+import {getSizesConstantAsArray} from '../../../utils/constant/app/sizeConstant';
 import {
   TEXT_VARIANTS,
   getTextVariantsConstantAsArray,
@@ -12,7 +15,6 @@ import {
   COLORS,
   getColorsConstantAsArray,
 } from '../../../utils/constant/app/colorConstant';
-import {getSizesConstantAsArray} from '../../../utils/constant/app/sizeConstant';
 
 const RowContainer = styled(ViewComp)`
   display: flex;

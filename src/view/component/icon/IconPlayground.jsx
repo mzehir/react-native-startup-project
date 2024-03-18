@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import styled from '@emotion/native';
+//* components
 import ViewComp from '../../../components/core/View';
+//* sections
 import ObserveSection from './ObserveSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
 import CustomizeSection from './CustomizeSection';
-import { COLORS } from '../../../utils/constant/app/colorConstant';
+//* utils
+import {COLORS} from '../../../utils/constant/app/colorConstant';
 
 const Container = styled(ViewComp)`
   display: flex;

@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import CustomTextInput from '../../../components/custom/CustomTextInput';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
+//* utils
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 import {COLORS} from '../../../utils/constant/app/colorConstant';
 import {KEYBOARD_TYPES} from '../../../utils/constant/app/textInputConstants';

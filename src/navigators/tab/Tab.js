@@ -10,6 +10,7 @@ const TabNavigator = ({initialRouteName, screens, screenOptions = {}}) => {
       initialRouteName={initialRouteName}
       screenOptions={{
         ...otherScreenOptions,
+
         ...(headerRight
           ? {
               headerRight: () => headerRight(),

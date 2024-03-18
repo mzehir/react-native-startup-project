@@ -1,4 +1,5 @@
 import React, {useState, createContext} from 'react';
+//* components
 import BottomModalComp from '../components/custom/BottomModal';
 import SettingsSection from '../components/custom/settings/Settings';
 

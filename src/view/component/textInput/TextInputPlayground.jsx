@@ -1,16 +1,19 @@
 import React, {useState} from 'react';
 import styled from '@emotion/native';
+//* components
 import ViewComp from '../../../components/core/View';
+//* sections
 import ObserveSection from './ObserveSection';
 import CustomizeSection from './CustomizeSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
+//* utils
+import {ICON_POSITION} from '../../../utils/constant/app/iconSizeConstant';
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
 import {
   KEYBOARD_TYPES,
   TYPES_OF_USE,
 } from '../../../utils/constant/app/textInputConstants';
-import {ICON_POSITION} from '../../../utils/constant/app/iconSizeConstant';
-import {SIZES} from '../../../utils/constant/app/sizeConstant';
-import {COLORS} from '../../../utils/constant/app/colorConstant';
 
 const Container = styled(ViewComp)`
   display: flex;

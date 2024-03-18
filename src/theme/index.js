@@ -1,4 +1,5 @@
 import {Dimensions} from 'react-native';
+//* sections
 import variants from './variants';
 import typography from './typography';
 

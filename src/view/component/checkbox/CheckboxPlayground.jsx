@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
 import styled from '@emotion/native';
+//* components
 import ViewComp from '../../../components/core/View';
+//* sections
 import ObserveSection from './ObserveSection';
 import CustomizeSection from './CustomizeSection';
 import ReadyComponentsSection from './ReadyComponentsSection';
+//* utils
 import {SIZES} from '../../../utils/constant/app/sizeConstant';
 import {COLORS} from '../../../utils/constant/app/colorConstant';
 

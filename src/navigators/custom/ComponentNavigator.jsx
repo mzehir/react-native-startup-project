@@ -2,8 +2,11 @@ import React from 'react';
 import {useTheme} from '@emotion/react';
 import StackNavigator from '../stack/Stack';
 import AccessToGlobalSettingsUseContext from '../../hooks/AccessToGlobalSettingsUseContext';
+//* components
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 import TouchableOpacityComp from '../../components/core/TouchableOpacity';
+//* utils
+import {ICON_SIZES} from '../../utils/constant/app/iconSizeConstant';
 import {
   COMPONENT_NAVIGATORS,
   getComponentNavigatorsConstantAsArray,
@@ -27,14 +30,20 @@ const ComponentNavigator = () => {
             navigationHook.navigate(COMPONENT_NAVIGATORS.COMPONENTS.name)
           }
           style={{marginRight: 10}}>
-          <MaterialIconsDefaultComp name="arrow-back" size={20} />
+          <MaterialIconsDefaultComp
+            name="arrow-back"
+            size={ICON_SIZES.medium.size}
+          />
         </TouchableOpacityComp>
       ) : null;
     },
 
     headerRight: () => (
       <TouchableOpacityComp onPress={() => setSettingsModalVisible()}>
-        <MaterialIconsDefaultComp name="settings" size={20} />
+        <MaterialIconsDefaultComp
+          name="settings"
+          size={ICON_SIZES.medium.size}
+        />
       </TouchableOpacityComp>
     ),
   };

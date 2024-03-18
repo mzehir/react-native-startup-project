@@ -1,4 +1,5 @@
 import merge from 'deepmerge';
+//* utils
 import {THEMES} from '../utils/constant/themeConstant';
 
 const defaultVariant = {

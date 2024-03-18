@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 import CustomCheckboxComp from '../../../components/custom/CustomCheckbox';
+//* utils
 import {COLORS} from '../../../utils/constant/app/colorConstant';
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 import {SIZES} from '../../../utils/constant/app/sizeConstant';

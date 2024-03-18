@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/native';
+//* components
 import ScrollViewComp from '../core/ScrollView';
 
 const StyledScrollViewDefault = styled(ScrollViewComp)``;

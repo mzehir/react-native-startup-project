@@ -1,23 +1,30 @@
-import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import AuthLayout from '../../layout/AuthLayout';
-import RegisterView from '../../view/auth/register/Register';
+import GuestAuthView from '../../view/auth/register/GuestAuth';
 import HomeNavigator from '../../navigators/custom/HomeNavigator';
+//* components
 import CustomTextComp from '../../components/custom/CustomText';
+import {ScrollViewDefault} from '../../components/custom/ScrollViews';
+//* utils
+import {TEXT_VARIANTS} from './app/textVariantConstant';
+import {SIZES} from './app/sizeConstant';
 
 export const AUTH_NAVIGATORS = {
-  REGISTER: {
-    name: 'register',
+  GUEST_AUTH: {
+    name: 'guest-auth',
     component: props => (
       <ScrollViewDefault>
         <AuthLayout>
-          <RegisterView {...props} />
+          <GuestAuthView {...props} />
         </AuthLayout>
       </ScrollViewDefault>
     ),
     options: {
-      title: 'Register',
+      title: 'Guest Screen',
       headerTitle: props => (
-        <CustomTextComp variant="title" size="medium">
+        <CustomTextComp
+          isTranslate={false}
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
           {props.children}
         </CustomTextComp>
       ),

@@ -1,4 +1,3 @@
-import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import DefaultLayout from '../../layout/DefaultLayout';
 import ComponentsView from '../../view/component/Components';
 import IconPlayground from '../../view/component/icon/IconPlayground';
@@ -6,7 +5,10 @@ import CheckboxPlayground from '../../view/component/checkbox/CheckboxPlayground
 import TextPlayground from '../../view/component/text/TextPlayground';
 import TextInputPlayground from '../../view/component/textInput/TextInputPlayground';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
+//* components
+import {ScrollViewDefault} from '../../components/custom/ScrollViews';
 import CustomTextComp from '../../components/custom/CustomText';
+//* utils
 import {TEXT_VARIANTS} from './app/textVariantConstant';
 import {SIZES} from './app/sizeConstant';
 

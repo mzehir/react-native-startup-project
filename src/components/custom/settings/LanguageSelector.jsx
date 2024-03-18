@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from '@emotion/native';
 import LanguageUseContext from '../../../hooks/LanguageUseContext';
+//* components
 import ViewComp from '../../core/View';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
 import CustomTextComp from '../CustomText';
+//* utils
 import {getLanguagesConstantAsArray} from '../../../utils/constant/languageConstant';
 
 const Container = styled(ViewComp)`
