@@ -1,12 +1,19 @@
 import React, {useState} from 'react';
 import {useTheme} from '@emotion/react';
 import {Dropdown} from 'react-native-element-dropdown';
+//* components
 import ViewComp from '../View';
+//* utils
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
 
 const ReactNativeElementDropdown = ({
   data = [], //* [{label: "", value: ""}]
   value = '',
   setValue,
+  size = SIZES.small.value,
+  color = COLORS.STANDARD.value,
+  focus = false,
   mode = 'default', //* auto || default || modal
   dropdownPosition = 'auto', //* auto || top ||bottom
   disable = false,
@@ -14,19 +21,27 @@ const ReactNativeElementDropdown = ({
   searchPlaceholder = 'Bir değer ara',
   search = true,
   maxHeight = 300,
-  size = 'small', //* small || medium || large
 }) => {
   const themeHook = useTheme();
-  const [isFocus, setIsFocus] = useState(false);
+  const [isFocus, setIsFocus] = useState(focus);
 
   const style = {
-    height: size === 'small' ? 35 : size === 'medium' ? 45 : 50,
-    paddingHorizontal: size === 'small' ? 6 : size === 'medium' ? 8 : 10,
+    height:
+      size === SIZES.small.value ? 35 : size === SIZES.medium.value ? 45 : 50,
+
+    paddingHorizontal:
+      size === SIZES.small.value ? 6 : size === SIZES.medium.value ? 8 : 10,
+
     backgroundColor:
       themeHook.palette.app.components.elementDropdown.inputBackground,
-    borderColor: isFocus
-      ? themeHook.palette.app.components.elementDropdown.inputBorderColorFocus
-      : themeHook.palette.app.components.elementDropdown.inputBorderColor,
+
+    borderColor:
+      isFocus && color === COLORS.STANDARD.value
+        ? themeHook.palette.app.components.elementDropdown.inputBorderColorFocus
+        : isFocus
+        ? themeHook.palette[color].borderColor
+        : themeHook.palette.app.components.elementDropdown.inputBorderColor,
+
     borderWidth: 1,
     borderRadius: 8,
   };
@@ -50,7 +65,8 @@ const ReactNativeElementDropdown = ({
   };
 
   const inputSearchStyle = {
-    height: size === 'small' ? 30 : size === 'medium' ? 35 : 40,
+    height:
+      size === SIZES.small.value ? 30 : size === SIZES.medium.value ? 35 : 40,
     padding: 0,
     fontSize: themeHook.typography.forSelect[size].fontSize,
     fontWeight: themeHook.typography.forSelect[size].fontWeight,

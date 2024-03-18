@@ -72,6 +72,11 @@ const ComponentsView = ({navigation}) => {
       name: COMPONENT_NAVIGATORS.TEXT_INPUT.name,
     },
     {
+      title: 'Dropdown',
+      content: 'components.componentsViewDropdownDesc',
+      name: COMPONENT_NAVIGATORS.DROPDOWN.name,
+    },
+    {
       title: 'Button',
       content: 'components.componentsViewButtonDesc',
       name: COMPONENT_NAVIGATORS.BUTTON.name,

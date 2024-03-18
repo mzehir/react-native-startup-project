@@ -21,6 +21,7 @@
     "checkboxPlayground": "Checkbox - Spielplatz",
     "textInputPlayground": "TextInput - Spielplatz",
     "radioButtonPlayground": "Radio-Button - Spielplatz",
+    "dropdownPlayground": "Dropdown - Spielplatz",
     "goToDetail": "Zu den Details",
     "componentsViewButtonDesc": "Wenn Sie möchten, können Sie die von der Anwendung angebotenen Schaltflächen untersuchen und anpassen.",
     "componentsViewTypographyDesc": "Wenn Sie möchten, können Sie die von der App angebotenen Typografien überprüfen und anpassen.",
@@ -28,6 +29,7 @@
     "componentsViewCheckboxDesc": "Wenn Sie möchten, können Sie die von der App angebotenen ankreuzfeld prüfen.",
     "componentsViewTextInputDesc": "Wenn Sie möchten, können Sie die von der App angebotenen texteingabefeld prüfen.",
     "componentsViewRadioButtonDesc": "Wenn Sie möchten, können Sie die von der App angebotenen 'Radio-Button'-Funktionen untersuchen.",
+    "componentsViewDropdownDesc": "Wenn Sie möchten, können Sie die von der App angebotenen Dropdown-Funktionen prüfen.",
     "observeComponent": "Komponente beobachten",
     "customizeComponent": "Komponente anpassen",
     "readyComponents": "Fertige Komponenten",
@@ -42,6 +44,9 @@
     "selectUsageType": "Nutzungsart wählen",
     "disableComponent": "Komponente deaktivieren",
     "enterPlaceholder": "Platzhalter eingeben",
+    "openMenuAsADialogBox": "Menü als Dialogfeld öffnen",
+    "activateFilteringInTheMenu": "Aktivieren sie die filterung im menü",
+    "enterPlaceholderIntoFiltering": "Platzhalter in die filterung eingeben",
     "zzz": "zzz"
   }
 }

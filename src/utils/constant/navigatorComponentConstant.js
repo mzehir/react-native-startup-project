@@ -5,6 +5,7 @@ import CheckboxPlayground from '../../view/component/checkbox/CheckboxPlayground
 import RadioPlayground from '../../view/component/radio/RadioPlayground';
 import TextPlayground from '../../view/component/text/TextPlayground';
 import TextInputPlayground from '../../view/component/textInput/TextInputPlayground';
+import DropdownPlayground from '../../view/component/dropdown/DropdownPlayground';
 import ButtonPlayground from '../../view/component/button/ButtonPlayground';
 //* components
 import {CustomScrollViewDefaultComp} from '../../components/custom/CustomScrollViews';
@@ -135,6 +136,27 @@ export const COMPONENT_NAVIGATORS = {
     ),
     options: {
       title: 'components.textInputPlayground',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+    },
+  },
+
+  DROPDOWN: {
+    name: 'dropdown',
+    component: props => (
+      <CustomScrollViewDefaultComp>
+        <DefaultLayout>
+          <DropdownPlayground {...props} />
+        </DefaultLayout>
+      </CustomScrollViewDefaultComp>
+    ),
+    options: {
+      title: 'components.dropdownPlayground',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
