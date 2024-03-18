@@ -75,7 +75,7 @@ const StyledTouchableOpacityComp = styled(TouchableOpacityComp)`
   }};
 `;
 
-const CustomTouchableOpacityComp = ({
+const CustomButtonComp = ({
   size = SIZES.small.value,
   color = COLORS.SUCCESS.value,
   variant = BUTTON_VARIANTS.CONTAINED.value,
@@ -122,4 +122,4 @@ const CustomTouchableOpacityComp = ({
   );
 };
 
-export default CustomTouchableOpacityComp;
+export default CustomButtonComp;

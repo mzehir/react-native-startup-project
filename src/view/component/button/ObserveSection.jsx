@@ -3,7 +3,7 @@ import React from 'react';
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
-import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
+import CustomButtonComp from '../../../components/custom/CustomButton';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 //* utils
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
@@ -28,7 +28,7 @@ const ObserveSection = ({
           components.observeComponent
         </CustomTextComp>
 
-        <CustomTouchableOpacityComp
+        <CustomButtonComp
           size={selectedSize}
           color={selectedColor}
           variant={selectedVariant}
@@ -43,7 +43,7 @@ const ObserveSection = ({
               }
             : {})}>
           Custom Button
-        </CustomTouchableOpacityComp>
+        </CustomButtonComp>
       </ViewComp>
     </PaperComp>
   );

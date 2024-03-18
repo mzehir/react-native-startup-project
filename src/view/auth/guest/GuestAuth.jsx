@@ -3,7 +3,7 @@ import styled from '@emotion/native';
 import {useNavigation} from '@react-navigation/native';
 //* components
 import ViewComp from '../../../components/core/View';
-import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
+import CustomButtonComp from '../../../components/custom/CustomButton';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 //* utils
 import {AUTH_NAVIGATORS} from '../../../utils/constant/navigatorAuthConstant';
@@ -23,7 +23,7 @@ const GuestAuthView = () => {
 
   return (
     <Container>
-      <CustomTouchableOpacityComp
+      <CustomButtonComp
         variant={BUTTON_VARIANTS.TEXT.value}
         color={COLORS.INFO.value}
         size={SIZES.small.value}
@@ -36,7 +36,7 @@ const GuestAuthView = () => {
           navigation.navigate(AUTH_NAVIGATORS.HOME_NAVIGATOR.name)
         }>
         Go to the home screen in home navigator
-      </CustomTouchableOpacityComp>
+      </CustomButtonComp>
     </Container>
   );
 };

@@ -3,7 +3,7 @@ import styled from '@emotion/native';
 //* components
 import ViewComp from '../../components/core/View';
 import PaperComp from '../../components/custom/Paper';
-import CustomTouchableOpacityComp from '../../components/custom/CustomTouchableOpacity';
+import CustomButtonComp from '../../components/custom/CustomButton';
 import CustomTextComp from '../../components/custom/CustomText';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
 //* utils
@@ -113,7 +113,7 @@ const Item = ({navigation, title, content, name}) => {
           style={{
             width: '60%',
           }}>
-          <CustomTouchableOpacityComp
+          <CustomButtonComp
             variant={BUTTON_VARIANTS.TEXT.value}
             color={COLORS.INFO.value}
             size={SIZES.small.value}
@@ -124,7 +124,7 @@ const Item = ({navigation, title, content, name}) => {
             }}
             onPress={() => navigation.navigate(name)}>
             components.goToDetail
-          </CustomTouchableOpacityComp>
+          </CustomButtonComp>
         </ViewComp>
       </ItemButtonContainer>
     </ItemContainer>

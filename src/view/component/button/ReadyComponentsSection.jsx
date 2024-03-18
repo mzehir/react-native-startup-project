@@ -4,7 +4,7 @@ import styled from '@emotion/native';
 import PaperComp from '../../../components/custom/Paper';
 import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
-import CustomTouchableOpacityComp from '../../../components/custom/CustomTouchableOpacity';
+import CustomButtonComp from '../../../components/custom/CustomButton';
 import {MaterialIconsDefaultComp} from '../../../components/custom/Icons';
 //* utils
 import {SIZES} from '../../../utils/constant/app/sizeConstant';
@@ -46,7 +46,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
 
         <ContentWrapper>
           <Row>
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.ERROR.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -57,9 +57,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 1
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.INFO.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -70,9 +70,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 2
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.PRIMARY.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -83,9 +83,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 3
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SECONDARY.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -96,9 +96,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 4
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SUCCESS.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -109,9 +109,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 5
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.WARNING.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -122,111 +122,111 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 6
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
           </Row>
 
           <Row>
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.ERROR.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 1
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.INFO.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.NORMAL.value}
               size={SIZES.small.value}>
               Button 2
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.PRIMARY.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.MORE.value}
               size={SIZES.small.value}>
               Button 3
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SECONDARY.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.MUCH.value}
               size={SIZES.small.value}>
               Button 4
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SUCCESS.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.PLENTY.value}
               size={SIZES.small.value}>
               Button 5
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.WARNING.value}
               variant={BUTTON_VARIANTS.CONTAINED.value}
               radius={BUTTON_RADIUS.MANY.value}
               size={SIZES.small.value}>
               Button 6
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
           </Row>
 
           <Row>
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.ERROR.value}
               variant={BUTTON_VARIANTS.OUTLINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 1
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.INFO.value}
               variant={BUTTON_VARIANTS.OUTLINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 2
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.PRIMARY.value}
               variant={BUTTON_VARIANTS.OUTLINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 3
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SECONDARY.value}
               variant={BUTTON_VARIANTS.OUTLINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 4
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SUCCESS.value}
               variant={BUTTON_VARIANTS.OUTLINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 5
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.WARNING.value}
               variant={BUTTON_VARIANTS.OUTLINED.value}
               radius={BUTTON_RADIUS.FEW.value}
               size={SIZES.small.value}>
               Button 6
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
           </Row>
 
           <Row>
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.ERROR.value}
               variant={BUTTON_VARIANTS.TEXT.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -237,9 +237,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 1
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.INFO.value}
               variant={BUTTON_VARIANTS.TEXT.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -250,9 +250,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 2
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.PRIMARY.value}
               variant={BUTTON_VARIANTS.TEXT.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -263,9 +263,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 3
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SECONDARY.value}
               variant={BUTTON_VARIANTS.TEXT.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -276,9 +276,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 4
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.SUCCESS.value}
               variant={BUTTON_VARIANTS.TEXT.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -289,9 +289,9 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 5
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
 
-            <CustomTouchableOpacityComp
+            <CustomButtonComp
               color={COLORS.WARNING.value}
               variant={BUTTON_VARIANTS.TEXT.value}
               radius={BUTTON_RADIUS.FEW.value}
@@ -302,7 +302,7 @@ const ReadyComponentsSection = ({sectionPaperPadding}) => {
                 position: ICON_POSITION.end.value,
               }}>
               Button 6
-            </CustomTouchableOpacityComp>
+            </CustomButtonComp>
           </Row>
         </ContentWrapper>
       </Container>
