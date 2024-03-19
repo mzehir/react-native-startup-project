@@ -36,7 +36,7 @@ const Row = styled(ViewComp)`
 const ReadyComponentsSection = ({sectionPaperPadding}) => {
   return (
     <CustomPaperComp {...sectionPaperPadding}>
-      <Container style={{display: 'flex', flexDirection: 'column', gap: 15}}>
+      <Container>
         <CustomTextComp
           style={{textAlign: 'center'}}
           variant={TEXT_VARIANTS.TITLE.value}
