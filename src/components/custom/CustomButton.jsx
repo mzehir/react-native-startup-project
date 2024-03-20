@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/native';
 //* components
+import ViewComp from '../core/View';
 import TouchableOpacityComp from '../core/TouchableOpacity';
 import CustomTextComp from './CustomText';
 //* utils
@@ -82,43 +83,49 @@ const CustomButtonComp = ({
   radius = BUTTON_RADIUS.FEW.value,
   iconFields = {position: '', component: undefined, name: ''},
   isTranslate = true,
+  fullWidth = true,
   children,
   ...props
 }) => {
   return (
-    <StyledTouchableOpacityComp
-      size={size}
-      color={color}
-      variant={variant}
-      radius={radius}
-      iconFields={iconFields}
-      {...props}>
-      <CustomTextComp
-        isTranslate={isTranslate}
-        variant={TEXT_VARIANTS.FOR_BUTTON.value}
+    <ViewComp
+      style={{
+        ...(!fullWidth ? {flexDirection: 'row'} : {}),
+      }}>
+      <StyledTouchableOpacityComp
         size={size}
-        colorType={
-          BUTTON_VARIANTS.CONTAINED.value === variant
-            ? COLOR_TYPE.CONTAINED_COLOR.value
-            : COLOR_TYPE.COLOR.value
-        }
-        color={color}>
-        {children}
-      </CustomTextComp>
-
-      {iconFields.component && (
-        <iconFields.component
-          size={ICON_SIZES[size].size}
-          colorGroup={color}
-          color={
-            variant === BUTTON_VARIANTS.CONTAINED.value
+        color={color}
+        variant={variant}
+        radius={radius}
+        iconFields={iconFields}
+        {...props}>
+        <CustomTextComp
+          isTranslate={isTranslate}
+          variant={TEXT_VARIANTS.FOR_BUTTON.value}
+          size={size}
+          colorType={
+            BUTTON_VARIANTS.CONTAINED.value === variant
               ? COLOR_TYPE.CONTAINED_COLOR.value
               : COLOR_TYPE.COLOR.value
           }
-          name={iconFields.name}
-        />
-      )}
-    </StyledTouchableOpacityComp>
+          color={color}>
+          {children}
+        </CustomTextComp>
+
+        {iconFields.component && (
+          <iconFields.component
+            size={ICON_SIZES[size].size}
+            colorGroup={color}
+            color={
+              variant === BUTTON_VARIANTS.CONTAINED.value
+                ? COLOR_TYPE.CONTAINED_COLOR.value
+                : COLOR_TYPE.COLOR.value
+            }
+            name={iconFields.name}
+          />
+        )}
+      </StyledTouchableOpacityComp>
+    </ViewComp>
   );
 };
 

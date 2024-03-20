@@ -33,6 +33,10 @@ const defaultVariant = {
         modal: {
           background: '#FFFFFF',
         },
+        accordion: {
+          background: '#FFFFFF',
+          borderColor: '#C4C4C4',
+        },
       },
     },
     standard: {
@@ -121,6 +125,10 @@ const darkVariant = merge(defaultVariant, {
         },
         modal: {
           background: '#383838',
+        },
+        accordion: {
+          background: '#233044',
+          borderColor: '#56606F',
         },
       },
     },

@@ -15,6 +15,10 @@
     "enterText": "Metin gir..."
   },
   "components": {
+    "aboutTheApplication": "Uygulama hakkında...",
+    "applicationDescription": "Bu uygulama, 'react-native android' için ihtiyaca özel uygulamaların daha hızlı oluşturulmasına ve geliştirilmesine yardımcı olan bir araçtır. İçerisinde temel bileşenler, özel bileşenler, Redux Toolkit entegrasyonu, çoklu tema desteği ve çoklu dil desteği gibi birçok özellik barındırmaktadır. Esnek yapısı sayesinde kolayca ihtiyaçlara uygun şekilde yeniden özelleştirilebilir.\n\nBu sürüm, uygulamanın ilk sürümüdür. Bir sonraki sürümde Redux Toolkit ile API katmanı, ileri seviye bileşenler, 'oturum açma sayfası', 'kayıt olma sayfası', 'kullanıcı profil sayfası', 'parolamı unuttum sayfası' gibi yenilikler eklenmiş olacaktır. Ayrıca mevcut bileşenler de ihtiyaca göre güncellenecektir.",
+    "version": "Versiyon",
+    "goToNpm": "NPM Sayfasına Git",
     "buttonPlayground": "Button - Oyun Alanı",
     "typographyPlayground": "Typography - Oyun Alanı",
     "iconPlayground": "Icon - Oyun Alanı",
@@ -46,7 +50,27 @@
     "enterPlaceholder": "Yer tutucu gir",
     "openMenuAsADialogBox": "Menüyü iletişim kutusu olarak aç",
     "activateFilteringInTheMenu": "Menüde filtrelemeyi etkinleştir",
-    "enterPlaceholderIntoFiltering":"Filtrelemeye yer tutucu gir",
+    "enterPlaceholderIntoFiltering": "Filtrelemeye yer tutucu gir",
     "zzz": "zzz"
+  },
+  "npmDependencies": {
+    "emotionNativeDescription": "CSS-in-JS çözümü sunan bir kütüphane. React Native projelerinde stil oluşturmak için kullanılır. Componentlerin stillerini içinde JavaScript objeleri olarak tanımlamanıza izin verir.",
+    "emotionReactDescription": "React uygulamaları için duygusal temel kütüphane. React bileşenlerinin stillerini oluşturmak için CSS-in-JS çözümü sağlar. @emotion/native ile birlikte kullanılır.",
+    "reactNativeAsyncStorageAsyncStorageDescription": "React Native uygulamalarında asenkron depolama işlemleri için kullanılan bir kütüphane. Genellikle kullanıcı ayarları, oturum bilgileri, yerel veriler gibi verileri saklamak için kullanılır.",
+    "reactNavigationBottomTabsDescription": "React Navigation kütüphanesinin alt sekme navigasyonunu sağlayan bir parçasıdır. Genellikle alt tab menüsü oluşturmak için kullanılır.",
+    "reactNavigationNativeDescription": "React Navigation kütüphanesinin temel parçasıdır. React Native uygulamalarında gezinme işlevselliği sağlar. Stack, tab, drawer ve diğer navigasyon yapılarını destekler.",
+    "reactNavigationNativeStackDescription": "React Navigation kütüphanesinin stack-based navigasyonunu sağlayan bir parçasıdır. Stack tabanlı bir gezinti yönetimi sağlar.",
+    "reduxjsToolkitDescription": "Redux için resmi bir paket olan Redux Toolkit. Redux tabanlı uygulamaları geliştirmek için kullanılır. Redux'in kullanımını kolaylaştırır ve tipik Redux yapılarını hızlı bir şekilde oluşturmanıza olanak sağlar.",
+    "i18NextDescription": "Çok dilli uygulamalar geliştirmek için kullanılan bir JavaScript kütüphanesidir. İçeriği yerelleştirmek ve kullanıcıya uygun dilde sunmak için kullanılır.",
+    "reactDescription": "Facebook tarafından geliştirilen ve UI'ları oluşturmak için kullanılan bir JavaScript kütüphanesidir. React, bileşen tabanlı bir yapıya sahiptir ve sanal DOM kullanarak performansı artırır.",
+    "reactI18nextDescription": "React uygulamaları için i18next entegrasyonu sağlar. Çok dilli uygulamalar geliştirmek ve yerelleştirme işlemlerini kolaylaştırmak için kullanılır.",
+    "reactNativeDescription": "Facebook tarafından geliştirilen ve mobil uygulamalar oluşturmak için kullanılan bir framework'tür. JavaScript ve React kullanarak Android ve iOS için native uygulamalar oluşturmanıza olanak sağlar.",
+    "reactNativeElementDropdownDescription": "React Native uygulamalarında açılır menüleri oluşturmak için kullanılan bir kütüphanedir.",
+    "reactNativeSafeAreaContextDescription": "iPhone X ve sonraki modeller gibi cihazlarda güvenli alan (safe area) bilgisine erişim sağlayan bir kütüphanedir. Bu cihazlarda ekranın üst ve alt kenarlarında ekstra alan bulunur ve bu kütüphane bu alanları hesaba katarak UI'ları düzenlemenize olanak sağlar.",
+    "reactNativeScreens": "React Navigation için optimize edilmiş ekran bileşenlerini içeren bir kütüphanedir. Performansı artırmak için kullanılır.",
+    "reactNativeSvgDescription": "React Native uygulamalarında SVG (Scalable Vector Graphics) görüntülerini render etmek için kullanılan bir kütüphanedir.",
+    "reactNativeSvgTransformerDescription": "React Native'de SVG dosyalarını kullanmanıza olanak sağlayan bir dönüştürücüdür. SVG dosyalarını bileşenlere dönüştürerek kullanılmasını sağlar.",
+    "reactNativeVectorIconsDescription": "React Native uygulamalarında vektör ikonları kullanmak için kullanılan bir kütüphanedir. IconData veya FontAwesome gibi ikon kümelerini içerir.",
+    "reactReduxDescription": "Redux'in React uygulamalarıyla entegrasyonunu sağlayan bir kütüphanedir. Redux tabanlı uygulamalarda state yönetimini kolaylaştırır ve Redux store'unun bileşenlere bağlanmasını sağlar."
   }
 }
