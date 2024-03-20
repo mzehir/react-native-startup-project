@@ -5,6 +5,7 @@ import ViewComp from '../../../components/core/View';
 import CustomTextComp from '../../../components/custom/CustomText';
 //* section
 import NpmPackagesSection from './aboutTheApplicationSections/npmPackages/NpmPackages';
+import ProjectStructureSection from './aboutTheApplicationSections/projectStructure/ProjectStructure';
 //* utils
 import {TEXT_VARIANTS} from '../../../utils/constant/app/textVariantConstant';
 import { SIZES } from '../../../utils/constant/app/sizeConstant';
@@ -39,6 +40,8 @@ const AboutTheApplicationSection = () => {
 
       <ContentWrapper>
         <NpmPackagesSection />
+
+        <ProjectStructureSection />
       </ContentWrapper>
     </Container>
   );

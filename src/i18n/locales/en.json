@@ -19,6 +19,7 @@
     "applicationDescription": "This application is a tool that helps to create and develop custom 'react-native android' applications more quickly. It includes many features such as basic components, custom components, Redux Toolkit integration, support for multiple themes, and support for multiple languages. Thanks to its flexible structure, it can be easily customized according to needs.\n\nThis version is the initial release of the application. In the next version, enhancements such as the API layer with Redux Toolkit, advanced components, 'login page', 'registration page', 'user profile page', 'forgot password page', and others will be added. Additionally, existing components will also be updated as needed.",
     "version": "Version",
     "goToNpm": "Go to NPM Page",
+    "projectStructure": "Project Structure",
     "buttonPlayground": "Button - Playground",
     "typographyPlayground": "Typography - Playground",
     "iconPlayground": "Icon - Playground",
