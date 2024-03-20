@@ -12,6 +12,12 @@
     "settings": "Ayarlar",
     "selectATheme": "Bir tema seç",
     "selectALanguage": "Bir dil seç",
+    "themeLanguageSettings": "Tema & Dil Ayarları",
+    "helpCenter": "Yardım Merkezi",
+    "frequentlyAskedQuestions": "Sıkça Sorulan Sorular",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfUse": "Kullanım Koşulları",
+    "disclaimer": "Feragatname",
     "enterText": "Metin gir..."
   },
   "components": {

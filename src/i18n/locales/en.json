@@ -12,6 +12,12 @@
     "settings": "Settings",
     "selectATheme": "Select a theme",
     "selectALanguage": "Select a language",
+    "themeLanguageSettings": "Theme & Language Settings",
+    "helpCenter": "Help Center",
+    "frequentlyAskedQuestions": "Frequently Asked Questions",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "disclaimer": "Disclaimer",
     "enterText": "Enter text..."
   },
   "components": {
