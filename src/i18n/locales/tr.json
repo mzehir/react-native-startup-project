@@ -15,6 +15,8 @@
     "enterText": "Metin gir..."
   },
   "components": {
+    "pageIsNotReadyYet": "Üzgünüm, bu sayfa henüz hazır değil",
+    "contactContent": "Ancak, benimle iletişime geçmek isterseniz aşağıdaki kişisel websitem üzerinden bana ulaşabilirsiniz.",
     "aboutTheApplication": "Uygulama hakkında...",
     "applicationDescription": "Bu uygulama, 'react-native android' için ihtiyaca özel uygulamaların daha hızlı oluşturulmasına ve geliştirilmesine yardımcı olan bir araçtır. İçerisinde temel bileşenler, özel bileşenler, Redux Toolkit entegrasyonu, çoklu tema desteği ve çoklu dil desteği gibi birçok özellik barındırmaktadır. Esnek yapısı sayesinde kolayca ihtiyaçlara uygun şekilde yeniden özelleştirilebilir.\n\nBu sürüm, uygulamanın ilk sürümüdür. Bir sonraki sürümde Redux Toolkit ile API katmanı, ileri seviye bileşenler, 'oturum açma sayfası', 'kayıt olma sayfası', 'kullanıcı profil sayfası', 'parolamı unuttum sayfası' gibi yenilikler eklenmiş olacaktır. Ayrıca mevcut bileşenler de ihtiyaca göre güncellenecektir.",
     "version": "Versiyon",

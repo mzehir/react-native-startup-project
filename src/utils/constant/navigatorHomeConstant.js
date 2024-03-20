@@ -1,6 +1,7 @@
 import DefaultLayout from '../../layout/DefaultLayout';
 import HomeView from '../../view/home/home/Home';
 import ComponentNavigator from '../../navigators/custom/ComponentNavigator';
+import ContactView from '../../view/home/contact/Contact';
 //* components
 import {CustomScrollViewDefaultComp} from '../../components/custom/CustomScrollViews';
 import {MaterialIconsDefaultComp} from '../../components/custom/Icons';
@@ -46,6 +47,30 @@ export const HOME_NAVIGATORS = {
           size={size}
           active={focused}
         />
+      ),
+    },
+  },
+
+  CONTACT: {
+    name: 'contact',
+    component: props => (
+      <CustomScrollViewDefaultComp>
+        <DefaultLayout>
+          <ContactView {...props} />
+        </DefaultLayout>
+      </CustomScrollViewDefaultComp>
+    ),
+    options: {
+      title: 'Contact',
+      headerTitle: props => (
+        <CustomTextComp
+          variant={TEXT_VARIANTS.TITLE.value}
+          size={SIZES.medium.value}>
+          {props.children}
+        </CustomTextComp>
+      ),
+      tabBarIcon: ({size, focused}) => (
+        <MaterialIconsDefaultComp name="contact-mail" size={size} active={focused} />
       ),
     },
   },
