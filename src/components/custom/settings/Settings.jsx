@@ -13,10 +13,10 @@ import {
 //* sections
 import LanguageSelector from './LanguageSelector';
 import ThemeSelector from './ThemeSelector';
-import Faq from '../documents/FAQ';
+// import Faq from '../documents/FAQ';
 import PrivacyPolicy from '../documents/PrivacyPolicy';
 import TermsConditions from '../documents/TermsConditions';
-import Disclaimer from '../documents/Disclaimer';
+// import Disclaimer from '../documents/Disclaimer';
 //* utils
 import {ICON_SIZES} from '../../../utils/constant/app/iconSizeConstant';
 
@@ -42,16 +42,16 @@ const ThemeSelectorModal = ({visible, setVisible}) => {
   );
 };
 
-const FAQModal = ({visible, setVisible}) => {
-  return (
-    <BottomModalComp
-      title="common.frequentlyAskedQuestions"
-      visible={visible}
-      setVisible={setVisible}>
-      <Faq />
-    </BottomModalComp>
-  );
-};
+// const FAQModal = ({visible, setVisible}) => {
+//   return (
+//     <BottomModalComp
+//       title="common.frequentlyAskedQuestions"
+//       visible={visible}
+//       setVisible={setVisible}>
+//       <Faq />
+//     </BottomModalComp>
+//   );
+// };
 
 const PrivacyPolicyModal = ({visible, setVisible}) => {
   return (
@@ -75,16 +75,16 @@ const TermsConditionsModal = ({visible, setVisible}) => {
   );
 };
 
-const DisclaimerModal = ({visible, setVisible}) => {
-  return (
-    <BottomModalComp
-      title="common.disclaimer"
-      visible={visible}
-      setVisible={setVisible}>
-      <Disclaimer />
-    </BottomModalComp>
-  );
-};
+// const DisclaimerModal = ({visible, setVisible}) => {
+//   return (
+//     <BottomModalComp
+//       title="common.disclaimer"
+//       visible={visible}
+//       setVisible={setVisible}>
+//       <Disclaimer />
+//     </BottomModalComp>
+//   );
+// };
 
 const Container = styled(ViewComp)`
   width: 100%;
@@ -105,7 +105,7 @@ const SettingsSection = () => {
   const [languageSelectorModalVisible, setLanguageSelectorModalVisible] =
     useState(false);
 
-  const [FAQModalVisible, setFAQModalVisible] = useState(false);
+  // const [FAQModalVisible, setFAQModalVisible] = useState(false);
 
   const [privacyPolicyModalVisible, setPrivacyPolicyModalVisible] =
     useState(false);
@@ -113,7 +113,7 @@ const SettingsSection = () => {
   const [termsConditionsModalVisible, setTermsConditionsModalVisible] =
     useState(false);
 
-  const [disclaimerModallVisible, setDisclaimerModalVisible] = useState(false);
+  // const [disclaimerModallVisible, setDisclaimerModalVisible] = useState(false);
 
   return (
     <Container>
@@ -137,13 +137,13 @@ const SettingsSection = () => {
 
       <CustomDividerWithTextComp text="common.helpCenter" />
 
-      <RowButton onPress={() => setFAQModalVisible(true)}>
+      {/* <RowButton onPress={() => setFAQModalVisible(true)}>
         <MaterialCommunityIconsDefaultComp
           name="head-question-outline"
           size={ICON_SIZES.medium.size}
         />
         <CustomTextComp>common.frequentlyAskedQuestions</CustomTextComp>
-      </RowButton>
+      </RowButton> */}
 
       <RowButton onPress={() => setPrivacyPolicyModalVisible(true)}>
         <MaterialCommunityIconsDefaultComp
@@ -161,13 +161,13 @@ const SettingsSection = () => {
         <CustomTextComp>common.termsOfUse</CustomTextComp>
       </RowButton>
 
-      <RowButton onPress={() => setDisclaimerModalVisible(true)}>
+      {/* <RowButton onPress={() => setDisclaimerModalVisible(true)}>
         <MaterialCommunityIconsDefaultComp
           name="alert-circle-outline"
           size={ICON_SIZES.medium.size}
         />
         <CustomTextComp>common.disclaimer</CustomTextComp>
-      </RowButton>
+      </RowButton> */}
 
       {/* ************************************************************************************** */}
 
@@ -181,7 +181,7 @@ const SettingsSection = () => {
         setVisible={setLanguageSelectorModalVisible}
       />
 
-      <FAQModal visible={FAQModalVisible} setVisible={setFAQModalVisible} />
+      {/* <FAQModal visible={FAQModalVisible} setVisible={setFAQModalVisible} /> */}
 
       <PrivacyPolicyModal
         visible={privacyPolicyModalVisible}
@@ -193,10 +193,10 @@ const SettingsSection = () => {
         setVisible={setTermsConditionsModalVisible}
       />
 
-      <DisclaimerModal
+      {/* <DisclaimerModal
         visible={disclaimerModallVisible}
         setVisible={setDisclaimerModalVisible}
-      />
+      /> */}
     </Container>
   );
 };
