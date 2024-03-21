@@ -3,7 +3,7 @@ import styled from '@emotion/native';
 //* components
 import ViewComp from '../components/core/View';
 
-const StyledAuthLayout = styled(ViewComp)`
+const StyledDefaultLayout = styled(ViewComp)`
   flex: 1;
   background-color: ${props => props.theme.palette.standard.background};
   padding-vertical: ${props => props.theme.spacing.byHeight(15)};
@@ -13,7 +13,7 @@ const StyledAuthLayout = styled(ViewComp)`
 const DefaultLayout = props => {
   const {children, ...other} = props;
 
-  return <StyledAuthLayout {...other}>{children}</StyledAuthLayout>;
+  return <StyledDefaultLayout {...other}>{children}</StyledDefaultLayout>;
 };
 
 export default DefaultLayout;
