@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from '@emotion/native';
 //* components
+import ScrollViewComp from '../core/ScrollView';
 import ModalComp from '../core/Modal';
 import ViewComp from '../core/View';
-import CustomTextComp from './CustomText';
 import TouchableOpacityComp from '../core/TouchableOpacity';
+import CustomTextComp from './CustomText';
 import {MaterialCommunityIconsDefaultComp} from './Icons';
 //* utils
 import {TEXT_VARIANTS} from '../../utils/constant/app/textVariantConstant';
@@ -31,14 +32,6 @@ const Wrapper = styled(ViewComp)`
     props.theme.palette.app.components.modal.background};
 `;
 
-const TitleWrapper = styled(ViewComp)`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 const ContentWrapper = styled(ViewComp)`
   width: 100%;
   align-items: flex-start;
@@ -49,6 +42,14 @@ const Line = styled(ViewComp)`
   border: 2px solid rgba(110, 127, 152, 1);
   opacity: 0.2;
   border-radius: 3px;
+`;
+
+const TitleWrapper = styled(ViewComp)`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const CloseButton = styled(TouchableOpacityComp)`
@@ -98,7 +99,9 @@ const BottomModalComp = props => {
 
           <SpacerTwo />
 
-          <ContentWrapper>{children}</ContentWrapper>
+          <ScrollViewComp style={{maxHeight: "90%", width:"100%"}}>
+            <ContentWrapper>{children}</ContentWrapper>
+          </ScrollViewComp>
         </Wrapper>
       </Container>
     </ModalComp>
