@@ -45,7 +45,7 @@ const ThemeSelectorModal = ({visible, setVisible}) => {
 const FAQModal = ({visible, setVisible}) => {
   return (
     <BottomModalComp
-      title="common.selectATheme"
+      title="common.frequentlyAskedQuestions"
       visible={visible}
       setVisible={setVisible}>
       <Faq />
@@ -56,7 +56,7 @@ const FAQModal = ({visible, setVisible}) => {
 const PrivacyPolicyModal = ({visible, setVisible}) => {
   return (
     <BottomModalComp
-      title="common.selectATheme"
+      title="common.privacyPolicy"
       visible={visible}
       setVisible={setVisible}>
       <PrivacyPolicy />
@@ -67,7 +67,7 @@ const PrivacyPolicyModal = ({visible, setVisible}) => {
 const TermsConditionsModal = ({visible, setVisible}) => {
   return (
     <BottomModalComp
-      title="common.selectATheme"
+      title="common.termsOfUse"
       visible={visible}
       setVisible={setVisible}>
       <TermsConditions />
@@ -78,7 +78,7 @@ const TermsConditionsModal = ({visible, setVisible}) => {
 const DisclaimerModal = ({visible, setVisible}) => {
   return (
     <BottomModalComp
-      title="common.selectATheme"
+      title="common.disclaimer"
       visible={visible}
       setVisible={setVisible}>
       <Disclaimer />

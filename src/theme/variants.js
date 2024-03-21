@@ -124,7 +124,7 @@ const darkVariant = merge(defaultVariant, {
           background: '#233044',
         },
         modal: {
-          background: '#383838',
+          background: '#233044',
         },
         accordion: {
           background: '#233044',

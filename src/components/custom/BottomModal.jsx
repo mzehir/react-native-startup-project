@@ -50,6 +50,7 @@ const TitleWrapper = styled(ViewComp)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-vertical: 5px;
 `;
 
 const CloseButton = styled(TouchableOpacityComp)`
@@ -99,7 +100,7 @@ const BottomModalComp = props => {
 
           <SpacerTwo />
 
-          <ScrollViewComp style={{maxHeight: "90%", width:"100%"}}>
+          <ScrollViewComp style={{maxHeight: '90%', width: '100%'}}>
             <ContentWrapper>{children}</ContentWrapper>
           </ScrollViewComp>
         </Wrapper>
