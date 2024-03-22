@@ -31,10 +31,13 @@ const CustomTextComp = ({
   size = SIZES.large.value,
   colorType = COLOR_TYPE.COLOR.value,
   color = COLORS.STANDARD.value,
-  isTranslate,
+  isTranslate = true,
   children,
   ...props
 }) => {
+  if (children == 'components.guestScreen') {
+    console.log(children);
+  }
   return (
     <StyledTextComp
       variant={variant}

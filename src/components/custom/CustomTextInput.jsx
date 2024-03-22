@@ -69,7 +69,7 @@ const CustomTextInput = ({
   color = COLORS.STANDARD.value,
   placeholder = 'common.enterText',
   iconFields,
-  isTranslation = true,
+  isTranslate = true,
   disabled = false,
   focus = false,
   text,
@@ -98,7 +98,7 @@ const CustomTextInput = ({
         size={size}
         keyboardType={keyboardType}
         placeholder={
-          (isTranslation = true ? translate(placeholder) : placeholder)
+          (isTranslate = true ? translate(placeholder) : placeholder)
         }
         placeholderTextColor={
           themeHook.palette.app.components.input.placeholderColor

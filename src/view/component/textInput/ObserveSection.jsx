@@ -48,7 +48,7 @@ const ObserveSection = ({
         </CustomTextComp>
 
         <CustomTextInput
-          isTranslation={false}
+          isTranslate={false}
           keyboardType={selectedKeyboardType}
           typeOfUse={selectedTypeOfUse}
           size={selectedSize}

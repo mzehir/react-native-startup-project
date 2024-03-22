@@ -3,7 +3,7 @@ import {Text} from 'react-native';
 import LanguageUseContext from '../../hooks/LanguageUseContext';
 
 const TextComp = props => {
-  const {children, isTranslation = true, ...other} = props;
+  const {children, isTranslate = true, ...other} = props;
   const {translate} = LanguageUseContext();
 
   const childrenTranslate = children => {
@@ -29,7 +29,7 @@ const TextComp = props => {
 
   return (
     <Text {...other}>
-      {isTranslation ? childrenTranslate(children) : children}
+      {isTranslate ? childrenTranslate(children) : children}
     </Text>
   );
 };
