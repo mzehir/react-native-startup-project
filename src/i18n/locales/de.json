@@ -21,6 +21,11 @@
     "enterText": "Text eingeben..."
   },
   "components": {
+    "guestScreenTitle": "Gast-Bildschirm",
+    "homeScreenTitle": "Startbildschirm",
+    "contantScreenTitle": "Kontakt Bildschirm",
+    "componentsScreenTitle": "Komponenten-Bildschirm",
+    "guestAuthContent": "Wenn die Zeit abgelaufen ist, werden Sie zum Hauptbildschirm zurückgeleitet",
     "pageIsNotReadyYet": "Sorry, diese Seite ist noch nicht fertig",
     "contactContent": "Wenn Sie jedoch mit mir Kontakt aufnehmen möchten, können Sie mich über meine persönliche Website unten erreichen.",
     "aboutTheApplication": "Über die Bewerbung...",

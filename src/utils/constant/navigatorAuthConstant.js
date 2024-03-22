@@ -19,10 +19,9 @@ export const AUTH_NAVIGATORS = {
       </CustomScrollViewDefaultComp>
     ),
     options: {
-      title: 'Guest Screen',
+      title: 'components.guestScreenTitle',
       headerTitle: props => (
         <CustomTextComp
-          isTranslate={false}
           variant={TEXT_VARIANTS.TITLE.value}
           size={SIZES.medium.value}>
           {props.children}

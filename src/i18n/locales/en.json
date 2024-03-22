@@ -21,6 +21,11 @@
     "enterText": "Enter text..."
   },
   "components": {
+    "guestScreenTitle": "Guest Screen",
+    "homeScreenTitle": "Home Screen",
+    "contantScreenTitle": "Contact Screen",
+    "componentsScreenTitle": "Components Screen",
+    "guestAuthContent": "You will be redirected to the main screen when the time is up",
     "pageIsNotReadyYet": "Sorry, this page is not ready yet",
     "contactContent": "However, if you would like to contact me, you can reach me through my personal website below.",
     "aboutTheApplication": "About the application...",

@@ -21,6 +21,11 @@
     "enterText": "Metin gir..."
   },
   "components": {
+    "guestScreenTitle": "Misafir Ekranı",
+    "homeScreenTitle": "Ana Ekran",
+    "contantScreenTitle": "İletişim Ekranı",
+    "componentsScreenTitle": "Bileşenler Ekranı",
+    "guestAuthContent": "Süre dolduğunda ana ekrana yönlendirileceksiniz",
     "pageIsNotReadyYet": "Üzgünüm, bu sayfa henüz hazır değil",
     "contactContent": "Ancak, benimle iletişime geçmek isterseniz aşağıdaki kişisel websitem üzerinden bana ulaşabilirsiniz.",
     "aboutTheApplication": "Uygulama hakkında...",

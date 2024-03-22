@@ -21,7 +21,7 @@ export const HOME_NAVIGATORS = {
       </CustomScrollViewDefaultComp>
     ),
     options: {
-      title: 'Home',
+      title: 'components.homeScreenTitle',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}
@@ -61,7 +61,7 @@ export const HOME_NAVIGATORS = {
       </CustomScrollViewDefaultComp>
     ),
     options: {
-      title: 'Contact',
+      title: 'components.contantScreenTitle',
       headerTitle: props => (
         <CustomTextComp
           variant={TEXT_VARIANTS.TITLE.value}

@@ -25,10 +25,9 @@ export const COMPONENT_NAVIGATORS = {
       </CustomScrollViewDefaultComp>
     ),
     options: {
-      title: 'Components',
+      title: 'components.componentsScreenTitle',
       headerTitle: props => (
         <CustomTextComp
-          isTranslate={false}
           variant={TEXT_VARIANTS.TITLE.value}
           size={SIZES.medium.value}>
           {props.children}
