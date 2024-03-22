@@ -18,9 +18,8 @@ const Container = styled(ViewComp)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
+  row-gap: 20px;
 `;
 
 const ItemContainer = styled(ViewComp)`
@@ -29,8 +28,7 @@ const ItemContainer = styled(ViewComp)`
   justify-content: space-between;
   padding-vertical: 15px;
   padding-horizontal: 15px;
-  height: 170px;
-  width: 170px;
+  min-height: 170px;
 `;
 
 const ItemContent = styled(ViewComp)`
@@ -85,14 +83,20 @@ const ComponentsView = ({navigation}) => {
   return (
     <Container>
       {items.map((item, index) => (
-        <CustomPaperComp key={index.toString()}>
-          <Item
-            navigation={navigation}
-            title={item.title}
-            content={item.content}
-            name={item.name}
-          />
-        </CustomPaperComp>
+        <ViewComp
+          key={index.toString()}
+          style={{
+            width: '48%',
+          }}>
+          <CustomPaperComp>
+            <Item
+              navigation={navigation}
+              title={item.title}
+              content={item.content}
+              name={item.name}
+            />
+          </CustomPaperComp>
+        </ViewComp>
       ))}
     </Container>
   );
@@ -119,23 +123,18 @@ const Item = ({navigation, title, content, name}) => {
       </ItemContent>
 
       <ItemButtonContainer>
-        <ViewComp
-          style={{
-            width: '60%',
-          }}>
-          <CustomButtonComp
-            variant={BUTTON_VARIANTS.TEXT.value}
-            color={COLORS.INFO.value}
-            size={SIZES.small.value}
-            iconFields={{
-              component: MaterialIconsDefaultComp,
-              name: 'arrow-forward',
-              position: ICON_POSITION.end.value,
-            }}
-            onPress={() => navigation.navigate(name)}>
-            components.goToDetail
-          </CustomButtonComp>
-        </ViewComp>
+        <CustomButtonComp
+          variant={BUTTON_VARIANTS.TEXT.value}
+          color={COLORS.INFO.value}
+          size={SIZES.small.value}
+          iconFields={{
+            component: MaterialIconsDefaultComp,
+            name: 'arrow-forward',
+            position: ICON_POSITION.end.value,
+          }}
+          onPress={() => navigation.navigate(name)}>
+          components.goToDetail
+        </CustomButtonComp>
       </ItemButtonContainer>
     </ItemContainer>
   );
