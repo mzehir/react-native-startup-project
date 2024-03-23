@@ -36,7 +36,7 @@ const TextInputPlayground = () => {
   const [isDisabled, setIsDisabled] = useState(false);
   const [iconVisible, setIconVisible] = useState(false);
   const [selectedIconPosition, setSelectedIconPosition] = useState(
-    ICON_POSITION.start,
+    ICON_POSITION.start.value,
   );
   const [selectedSize, setSelectedSize] = useState(SIZES.small.value);
   const [selectedColor, setSelectedColor] = useState(COLORS.STANDARD.value);
