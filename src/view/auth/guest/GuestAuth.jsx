@@ -17,37 +17,33 @@ const Container = styled(ViewComp)`
 
 const GuestAuthView = () => {
   const navigation = useNavigation();
-  const [countdown, setCountdown] = useState(5);
+  const [displayText, setDisplayText] = useState('');
+  const message = 'REACT NATIVE GUIDEBOOK';
 
   useEffect(() => {
-    if (countdown === 0) {
-      clearInterval(interval);
-      navigation.navigate(AUTH_NAVIGATORS.HOME_NAVIGATOR.name);
-      return;
-    }
+    let index = 0;
 
     const interval = setInterval(() => {
-      setCountdown(currentCountdown => currentCountdown - 1);
-    }, 1000);
+      if (index < message.length) {
+        setDisplayText(currentText => currentText + message[index]);
+        index++;
+      } else {
+        navigation.navigate(AUTH_NAVIGATORS.HOME_NAVIGATOR.name);
+        clearInterval(interval);
+      }
+    }, 100);
 
     return () => clearInterval(interval);
-  }, [countdown, navigation]);
+  }, []);
 
   return (
     <Container>
       <CustomTextComp
-        style={{textAlign: 'center'}}
-        color={COLORS.WARNING.value}>
-        components.guestAuthContent
-      </CustomTextComp>
-
-      <ViewComp style={{padding: 5}} />
-
-      <CustomTextComp
         isTranslate={false}
+        style={{textAlign: 'center'}}
         color={COLORS.WARNING.value}
         variant={TEXT_VARIANTS.TITLE.value}>
-        {countdown}
+        {displayText}
       </CustomTextComp>
     </Container>
   );
