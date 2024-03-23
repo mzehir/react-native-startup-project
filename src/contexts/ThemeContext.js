@@ -31,7 +31,7 @@ function ThemeProvider({children}) {
         activeTheme = storedTheme;
       } else if (!storedTheme && deviceTheme) {
         activeTheme =
-          deviceTheme == 'light' ? THEMES.DEFAULT.key : THEMES.DARK.key;
+          deviceTheme === 'light' ? THEMES.DEFAULT.key : THEMES.DARK.key;
       }
 
       setTheme(activeTheme);

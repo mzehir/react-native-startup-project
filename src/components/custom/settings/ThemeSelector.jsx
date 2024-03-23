@@ -5,9 +5,12 @@ import ThemeUseContext from '../../../hooks/ThemeUseContext';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
 import ViewComp from '../../core/View';
 import CustomTextComp from '../CustomText';
+import CustomRadioButton from '../CustomRadioButton';
 import {MaterialIconsDefaultComp} from '../Icons';
 //* utils
 import {getThemesConstantAsArray} from '../../../utils/constant/themeConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
 
 const Container = styled(ViewComp)`
   flex-direction: column;
@@ -29,12 +32,23 @@ const ThemeSelector = () => {
   return (
     <Container>
       {themesData.map((item, index) => (
-        <ThemeItemButton
-          key={index.toString()}
-          onPress={() => setTheme(item.key)}>
-          <MaterialIconsDefaultComp name={item.svgName} size={20} />
-          <CustomTextComp>{item.label}</CustomTextComp>
-        </ThemeItemButton>
+        <ViewComp
+          style={{display: 'flex', flexDirection: 'row', columnGap: 10}}
+          key={index.toString()}>
+          <CustomRadioButton
+            color={COLORS.STANDARD.value}
+            size={SIZES.small.value}
+            active={theme === item.key}
+            onPress={() => setTheme(item.key)}
+          />
+
+          <ThemeItemButton
+            key={index.toString()}
+            onPress={() => setTheme(item.key)}>
+            <MaterialIconsDefaultComp name={item.svgName} size={20} />
+            <CustomTextComp>{item.label}</CustomTextComp>
+          </ThemeItemButton>
+        </ViewComp>
       ))}
     </Container>
   );

@@ -12,7 +12,7 @@ const StatusBarComp = () => {
     <StatusBar
       animated={true}
       backgroundColor={themeHook.statusBar.background}
-      barStyle={theme === THEMES.DEFAULT.key ? 'light-content' : 'dark-content'}
+      barStyle={theme === THEMES.DEFAULT.key ? 'light-content' : 'light-content'}
       showHideTransition="fade"
       hidden={false}
     />

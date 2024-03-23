@@ -35,9 +35,6 @@ const CustomTextComp = ({
   children,
   ...props
 }) => {
-  if (children == 'components.guestScreen') {
-    console.log(children);
-  }
   return (
     <StyledTextComp
       variant={variant}

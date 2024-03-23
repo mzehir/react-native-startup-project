@@ -86,7 +86,7 @@ const CustomTextInput = ({
     <Container isFocus={isFocused} color={color} size={size}>
       {typeOfUse === TYPES_OF_USE.default.value &&
         iconFields?.component &&
-        iconFields?.position == ICON_POSITION.start.value && (
+        iconFields?.position === ICON_POSITION.start.value && (
           <iconFields.component
             style={{marginRight: 3}}
             name={iconFields.name}
@@ -135,7 +135,7 @@ const CustomTextInput = ({
 
       {typeOfUse === TYPES_OF_USE.default.value &&
         iconFields?.component &&
-        iconFields?.position == ICON_POSITION.end.value && (
+        iconFields?.position === ICON_POSITION.end.value && (
           <iconFields.component
             style={{marginLeft: 3}}
             name={iconFields.name}

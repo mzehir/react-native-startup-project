@@ -5,8 +5,11 @@ import LanguageUseContext from '../../../hooks/LanguageUseContext';
 import ViewComp from '../../core/View';
 import TouchableOpacityComp from '../../core/TouchableOpacity';
 import CustomTextComp from '../CustomText';
+import CustomRadioButton from '../CustomRadioButton';
 //* utils
 import {getLanguagesConstantAsArray} from '../../../utils/constant/languageConstant';
+import {COLORS} from '../../../utils/constant/app/colorConstant';
+import {SIZES} from '../../../utils/constant/app/sizeConstant';
 
 const Container = styled(ViewComp)`
   flex-direction: column;
@@ -28,11 +31,22 @@ const LanguageSelector = () => {
   return (
     <Container>
       {languagesData.map((item, index) => (
-        <LanguageItemButton
-          key={index.toString()}
-          onPress={() => setLanguage(item.key)}>
-          <CustomTextComp>{translate(item.label)}</CustomTextComp>
-        </LanguageItemButton>
+        <ViewComp
+          style={{display: 'flex', flexDirection: 'row', columnGap: 10}}
+          key={index.toString()}>
+          <CustomRadioButton
+            color={COLORS.STANDARD.value}
+            size={SIZES.small.value}
+            active={language === item.key}
+            onPress={() => setLanguage(item.key)}
+          />
+
+          <LanguageItemButton
+            key={index.toString()}
+            onPress={() => setLanguage(item.key)}>
+            <CustomTextComp>{translate(item.label)}</CustomTextComp>
+          </LanguageItemButton>
+        </ViewComp>
       ))}
     </Container>
   );

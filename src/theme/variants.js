@@ -176,7 +176,7 @@ const darkVariant = merge(defaultVariant, {
     },
   },
   statusBar: {
-    background: '#233044',
+    background: '#1B2635',
   },
   appBar: {
     background: '#233044',
