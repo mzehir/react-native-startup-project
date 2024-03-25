@@ -64,3 +64,6 @@ yarn-error.log
 
 # testing
 /coverage
+
+#Other
+/src/assets/REACT_NATIVE_GUIDEBOOK
